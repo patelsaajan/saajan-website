@@ -1,6 +1,6 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import { HeroHome } from "@/components/home";
 
 export default function Home() {
-  return <div>hello world!</div>;
+  return <HeroHome />;
 }
