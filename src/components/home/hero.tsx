@@ -15,7 +15,7 @@ const HomeHero = () => {
           flexWrap: "wrap-reverse",
           justifyContent: "space-around",
           alignItems: "center",
-          border: "1px solid",
+          // border: "1px solid",
           textAlign: { xs: "center", lg: "left" },
           mt: "150px",
           gap: { xs: "60px", lg: "0px" },
@@ -61,7 +61,10 @@ const HomeHero = () => {
           width={400}
           height={400}
           src={"/imgs/heroPhoto.jpg"}
-          style={{ borderRadius: "50%", border: "5px solid rgb(255, 0, 0)" }}
+          style={{
+            borderRadius: "50%",
+            border: `5px solid ${theme.palette.primary.main}`,
+          }}
         />
       </Box>
     </Container>

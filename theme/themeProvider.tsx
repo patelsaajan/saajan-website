@@ -9,6 +9,7 @@ const lightTheme = createTheme({
     primary: {
       main: "#FF6464",
     },
+    secondary: { main: "#EDF7FA" },
   },
 });
 
@@ -24,6 +25,7 @@ const darkTheme = createTheme({
 const MUIThemeProvider = ({ children }: any) => {
   return (
     <>
+      {/* <ThemeProvider theme={darkTheme}> */}
       <ThemeProvider theme={lightTheme}>
         <CssBaseline />
         {children}
