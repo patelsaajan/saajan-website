@@ -1,8 +1,11 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+"use client";
+
+import { Box, Button, Container, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
 const HomeHero = () => {
+  const theme = useTheme();
   return (
     <Container maxWidth="lg">
       <Box
@@ -34,13 +37,13 @@ const HomeHero = () => {
 
           <Button
             sx={{
-              backgroundColor: "#FF6464",
+              backgroundColor: "primary.main",
               color: "#FFFF",
               width: "208px",
               height: "50",
               "&:hover": {
-                border: `2px solid #FF6464`,
-                color: "#FF6464",
+                border: `2px solid ${theme.palette.primary.main}`,
+                color: "primary.main",
                 transitionDelay: "4ms",
                 p: "10px",
                 fontWeight: "800",
