@@ -22,7 +22,13 @@ const RecentPostCard = ({ title, date, tags, body }: cardProps) => {
         mx: { xs: "auto", md: 0 },
         backgroundColor: "#ffff",
         boxShadow: "8",
+        transition: "all 200ms ease-in",
         borderRadius: "4px",
+        "&:hover": {
+          // backgroundColor: "primary.light",
+          transform: "scale(1.02)",
+          boxShadow: "12",
+        },
       }}
     >
       <Typography variant="h6" fontWeight={"800"}>
