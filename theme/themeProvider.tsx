@@ -17,16 +17,18 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#581eca",
+      main: "#7C56B3",
+      dark: "#221C35",
     },
+    secondary: { main: "#EDF7FA" },
   },
 });
 
 const MUIThemeProvider = ({ children }: any) => {
   return (
     <>
-      {/* <ThemeProvider theme={darkTheme}> */}
       <ThemeProvider theme={lightTheme}>
+        {/* <ThemeProvider theme={lightTheme}> */}
         <CssBaseline />
         {children}
       </ThemeProvider>

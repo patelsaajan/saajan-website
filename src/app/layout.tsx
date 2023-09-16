@@ -1,3 +1,4 @@
+"use client";
 import MUIThemeProvider from "../../theme/themeProvider";
 import "./globals.css";
 import { Inter } from "next/font/google";
