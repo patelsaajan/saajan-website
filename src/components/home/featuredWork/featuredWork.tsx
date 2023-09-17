@@ -11,7 +11,13 @@ const FeaturedWork = () => {
           display: "flex column",
         }}
       >
-        <Typography fontSize={22} color={"#21243D"}>
+        <Typography
+          fontSize={22}
+          color={"#21243D"}
+          sx={{
+            textAlign: { xs: "center", md: "left" },
+          }}
+        >
           Featured works
         </Typography>
 

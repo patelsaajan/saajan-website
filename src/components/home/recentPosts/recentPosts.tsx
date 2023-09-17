@@ -11,7 +11,7 @@ const RecentPosts = () => {
       <Container
         maxWidth="lg"
         sx={{
-          pt: "30px",
+          p: "30px",
           marginTop: "30px",
         }}
       >

@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+"use client";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
@@ -17,6 +18,8 @@ const FeatureWorkCard = ({
   body,
   imageSrc,
 }: cardPrompts) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -30,12 +33,16 @@ const FeatureWorkCard = ({
         borderBottom: "2px solid #E0E0E0",
       }}
     >
-      <Image
-        alt={"feature work image"}
-        width={246}
-        height={180}
-        src={imageSrc}
-      />
+      {isMobile ? (
+        <></>
+      ) : (
+        <Image
+          alt={"feature work image"}
+          width={246}
+          height={180}
+          src={imageSrc}
+        />
+      )}
       <Box sx={{ display: "flex column" }}>
         <Typography variant="h5" fontWeight={"800"}>
           {title}
