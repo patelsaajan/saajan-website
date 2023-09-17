@@ -1,10 +1,10 @@
 import styles from "./page.module.css";
-import { HeroHome, RecentPosts } from "@/components/home";
+import { FeaturedWork, HeroHome, RecentPosts } from "@/components/home";
 
 export default function Home() {
   return (
     <>
-      <HeroHome /> <RecentPosts />
+      <HeroHome /> <RecentPosts /> <FeaturedWork />
     </>
   );
 }
