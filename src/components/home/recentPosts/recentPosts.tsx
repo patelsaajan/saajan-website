@@ -27,9 +27,7 @@ const RecentPosts = () => {
             flexWrap: { xs: "nowrap", md: "wrap" },
             gap: "20px",
             pt: "20px",
-
             justifyContent: "center",
-            alignItems: "center",
           }}
         >
           {postDataArray.map((card) => (

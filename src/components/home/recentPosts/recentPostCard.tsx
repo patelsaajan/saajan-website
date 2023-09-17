@@ -1,4 +1,6 @@
-import { Box, Typography } from "@mui/material";
+"useClient";
+
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 
 type cardProps = {
@@ -9,6 +11,8 @@ type cardProps = {
 };
 
 const RecentPostCard = ({ title, date, tags, body }: cardProps) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const cardMargin = "20px";
   const options: { dateStyle: "long" } = { dateStyle: "long" };
   return (
@@ -18,10 +22,10 @@ const RecentPostCard = ({ title, date, tags, body }: cardProps) => {
         p: "30px",
         width: "370px",
         height: "250px",
-        mb: "25px",
         mx: { xs: "auto", md: 0 },
         backgroundColor: "#ffff",
         boxShadow: "8",
+        mb: { xs: "20px", md: "0px" },
         transition: "all 200ms ease-in",
         borderRadius: "4px",
         "&:hover": {

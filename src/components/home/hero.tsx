@@ -41,13 +41,13 @@ const HomeHero = () => {
               color: "#FFFF",
               width: "208px",
               height: "50",
-              fontWeight: "400",
+              fontWeight: "525",
               borderRadius: "20px",
               transition: "all 200ms ease-out",
               "&:hover": {
                 backgroundColor: "primary.main",
                 transform: "scale(1.1)",
-                borderRadius: "5px",
+                borderRadius: "15px",
                 fontWeight: "600",
               },
             }}
