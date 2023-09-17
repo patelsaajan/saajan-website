@@ -41,6 +41,7 @@ const FeatureWorkCard = ({
           width={246}
           height={180}
           src={imageSrc}
+          style={{ borderRadius: "8px" }}
         />
       )}
       <Box sx={{ display: "flex column" }}>
@@ -50,7 +51,7 @@ const FeatureWorkCard = ({
         <Box sx={{ display: "flex", gap: "20px", mt: "20px" }}>
           <Box
             sx={{
-              backgroundColor: "#142850",
+              backgroundColor: "text.secondary",
               color: "#FFFF",
               px: "10px",
               pt: "1.5px",

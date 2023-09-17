@@ -27,7 +27,7 @@ const RecentPostCard = ({ title, date, tags, body }: cardProps) => {
         boxShadow: "8",
         mb: { xs: "20px", md: "0px" },
         transition: "all 200ms ease-in",
-        borderRadius: "4px",
+        borderRadius: "8px",
         "&:hover": {
           // backgroundColor: "primary.light",
           transform: "scale(1.02)",
