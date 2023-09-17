@@ -10,6 +10,7 @@ const lightTheme = createTheme({
       main: "#FF6464",
     },
     secondary: { main: "#EDF7FA" },
+    text: { secondary: "#142850" },
   },
 });
 
