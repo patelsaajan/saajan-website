@@ -36,7 +36,6 @@ const FeatureWorkCard = ({
         borderRadius: "16px",
         "&:hover": {
           boxShadow: 3,
-          // backgroundColor: "secondary.main",
           cursor: "pointer",
         },
       }}
