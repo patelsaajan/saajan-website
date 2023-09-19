@@ -1,5 +1,5 @@
 "use client";
-import { Box, Container, Typography, useTheme } from "@mui/material";
+import { Box, Button, Container, Typography, useTheme } from "@mui/material";
 import React from "react";
 import RecentPostCard from "./recentPostCard";
 import postDataArray from "@/components/data/posts";
@@ -12,14 +12,34 @@ const RecentPosts = () => {
         maxWidth="lg"
         sx={{
           p: "30px",
-          marginTop: "30px",
+          marginTop: "80px",
         }}
       >
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Typography fontSize={22} color={"#21243D"}>
+          <Typography
+            fontSize={22}
+            color={"#21243D"}
+            sx={{
+              transition: "all ease-in 200ms",
+              "&:hover": {
+                textDecoration: "1px wavy underline",
+                cursor: "pointer",
+              },
+            }}
+          >
             Recent Posts
           </Typography>
-          <Typography>View all</Typography>
+          <Typography
+            sx={{
+              transition: "all ease-in 200ms",
+              "&:hover": {
+                textDecoration: "1px wavy underline",
+                cursor: "pointer",
+              },
+            }}
+          >
+            View all
+          </Typography>
         </Box>
         <Box
           sx={{

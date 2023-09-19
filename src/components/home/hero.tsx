@@ -17,7 +17,7 @@ const HomeHero = () => {
           alignItems: "center",
           // border: "1px solid",
           textAlign: { xs: "center", lg: "left" },
-          mt: "150px",
+          mt: "50px",
           gap: { xs: "60px", lg: "0px" },
         }}
       >

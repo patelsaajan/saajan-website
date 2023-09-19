@@ -5,7 +5,7 @@ import featuredWorkData from "@/components/data/featuredWork";
 
 const FeaturedWork = () => {
   return (
-    <Container maxWidth="lg" sx={{ marginTop: "30px", marginBottom: "30px" }}>
+    <Container maxWidth="lg" sx={{ marginTop: "80px", marginBottom: "30px" }}>
       <Box
         sx={{
           display: "flex column",

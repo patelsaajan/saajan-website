@@ -1,5 +1,11 @@
 "use client";
-import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Box,
+  Divider,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
@@ -24,13 +30,15 @@ const FeatureWorkCard = ({
     <Box
       sx={{
         display: " flex",
-        // boxShadow: 3,
-        // borderRadius: "16px",
-        mt: "20px",
-        padding: "10px",
+        p: "20px",
         gap: "20px",
-        pb: "30px",
-        borderBottom: "2px solid #E0E0E0",
+        transition: "all 200ms ease-out",
+        borderRadius: "16px",
+        "&:hover": {
+          boxShadow: 3,
+          // backgroundColor: "secondary.main",
+          cursor: "pointer",
+        },
       }}
     >
       {isMobile ? (
