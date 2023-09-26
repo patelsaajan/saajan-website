@@ -24,16 +24,28 @@ const HomeHero = () => {
         <Box>
           <Typography variant="h3">Hi, i am Saajan,</Typography>
           <Typography variant="h4">Bristol Univeristy MEng graduate</Typography>
-          <Typography variant="body1" py={"20px"} textAlign={"justify"}>
-            This is where some text will go that will talk about me and my
-            interests so that the reader can get an idea of what the website is
-            for and why it was created. This is where some text will go that
-            will talk about me and my interests so that the reader can get an
-            idea of what the website is for and why it was created.This is where
-            some text will go that will talk about me and my interests so that
-            the reader can get an idea of what the website is for and why it was
-            created.
-          </Typography>
+          <Box sx={{ display: "flex column" }}>
+            <Typography variant="body1" py={"5px"} textAlign={"justify"}>
+              I'm originally from Cardiff and studied Electro-Mechanical
+              Engineering at the University of Bristol. I take pride in holding
+              a first-class master's degree in this field, with my guiding
+              principles in life focusing on making the world a better place and
+              assisting as many people as I can along the way.
+            </Typography>
+            <Typography variant="body1" py={"5px"} textAlign={"justify"}>
+              Currently, I'm on a learning journey, delving into TypeScript and
+              React, all the while sharpening my Python skills. When I'm not
+              deeply engrossed in coding, you can find me passionately
+              supporting Liverpool. I've discovered a unique way to blend my
+              enthusiasm for football with my keen interest in data by venturing
+              into the realms of data engineering and visualization.
+            </Typography>
+            <Typography variant="body1" py={"5px"} textAlign={"justify"}>
+              Away from the tech world, I'm a passionate cook who thrives on
+              experimenting with recipes and discovering delightful flavor
+              combinations.
+            </Typography>
+          </Box>
 
           <Button
             sx={{
