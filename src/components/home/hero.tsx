@@ -22,7 +22,9 @@ const HomeHero = () => {
         }}
       >
         <Box>
-          <Typography variant="h3">Hi, i am Saajan,</Typography>
+          <Typography variant="h3" mt="20px">
+            Hi, i am Saajan,
+          </Typography>
           <Typography variant="h4">Bristol Univeristy MEng graduate</Typography>
           <Box sx={{ display: "flex column" }}>
             <Typography variant="body1" py={"5px"} textAlign={"justify"}>
@@ -53,6 +55,7 @@ const HomeHero = () => {
               color: "#FFFF",
               width: "208px",
               height: "50",
+              mt: "50px",
               fontWeight: "525",
               borderRadius: "20px",
               transition: "all 200ms ease-out",
