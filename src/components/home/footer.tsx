@@ -23,17 +23,33 @@ const Footer = () => {
       }}
     >
       <Box sx={{ display: "flex", justifyContent: "center", gap: "20px" }}>
-        <IconButton>
+        <IconButton
+          onClick={() => {
+            window.open("https://www.linkedin.com/in/saajan-s-patel/");
+          }}
+        >
           <LinkedInIcon sx={{ color: "text.secondary" }} />
         </IconButton>
-        <IconButton>
+        <IconButton
+          onClick={() => {
+            window.open("https://github.com/patelsaajan");
+          }}
+        >
           <GitHubIcon sx={{ color: "text.secondary" }} />
         </IconButton>
-        <IconButton>
+        <IconButton
+          onClick={() => {
+            window.open("https://github.com/patelsaajan");
+          }}
+        >
           <TwitterIcon sx={{ color: "text.secondary" }} />
         </IconButton>
-        <IconButton>
-          <InstagramIcon sx={{ color: "text.secondary" }} />
+        <IconButton
+          onClick={() => {
+            window.open("https://www.instagram.com/_spatel/");
+          }}
+        >
+          <InstagramIcon sx={{ color: "text.secondary" }}></InstagramIcon>
         </IconButton>
       </Box>
 
