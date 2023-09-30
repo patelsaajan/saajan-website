@@ -12,8 +12,14 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import Link from "next/link";
 
-const pages = ["Home", "Projects", "Blog", "Cookbook"];
+const pages = [
+  { name: "home", goTo: "/" },
+  { name: "projects", goTo: "/projects" },
+  { name: "blog", goTo: "/blog" },
+  { name: "cookbook", goTo: "/cookbook" },
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -70,7 +76,7 @@ function ResponsiveAppBar() {
                   },
                 }}
               >
-                {page}
+                <Link href={page.goTo}>{page.name} </Link>
               </Button>
             ))}
           </Box>
