@@ -21,7 +21,7 @@ const BriefCard = ({
     <Box
       sx={{
         display: "flex column",
-        border: "2px solid black",
+        border: "3px solid black",
         boxShadow: 1,
         width: "280px",
         justifyContent: "center",
@@ -40,7 +40,7 @@ const BriefCard = ({
         width={200}
         height={200}
         alt="test image of food"
-        style={{ border: "1px solid black", borderRadius: "16px" }}
+        style={{ borderRadius: "16px" }}
       />
       <Typography variant="h5" fontWeight={700}>
         {primaryDish}
