@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+"use client";
+import { Box, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
@@ -15,6 +16,7 @@ const BriefCard = ({
   foodIamge,
   desc,
 }: cardPrompts) => {
+  const theme = useTheme();
   return (
     <Box
       sx={{
@@ -25,7 +27,12 @@ const BriefCard = ({
         justifyContent: "center",
         p: "10px",
         m: "20px",
+        transition: "200ms all ease-in",
         borderRadius: "16px",
+        "&:hover": {
+          border: `3px solid ${theme.palette.primary.main}`,
+          cursor: "pointer",
+        },
       }}
     >
       <Image
