@@ -1,4 +1,5 @@
-import { Box, Typography } from "@mui/material";
+"use client";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 
@@ -10,6 +11,8 @@ type cardPrompts = {
 };
 
 const BriefProjectCards = ({ title, date, desc, imageSrc }: cardPrompts) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <Box
       sx={{
@@ -23,13 +26,17 @@ const BriefProjectCards = ({ title, date, desc, imageSrc }: cardPrompts) => {
         "&:hover": { cursor: "pointer", transform: "scale(1.05)" },
       }}
     >
-      <Image
-        src={imageSrc}
-        width={200}
-        height={200}
-        alt={"picture of the 3pi+ robot"}
-        style={{ border: "2px solid black", borderRadius: "16px" }}
-      />
+      {isMobile ? (
+        <></>
+      ) : (
+        <Image
+          src={imageSrc}
+          width={200}
+          height={200}
+          alt={"picture of the 3pi+ robot"}
+          style={{ border: "2px solid black", borderRadius: "16px" }}
+        />
+      )}
       <Box
         sx={{
           display: "flex column",
