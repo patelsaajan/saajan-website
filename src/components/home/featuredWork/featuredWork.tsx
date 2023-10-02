@@ -22,15 +22,18 @@ const FeaturedWork = () => {
         </Typography>
 
         {featuredWorkData.map((data, i) => (
-          <FeatureWorkCard
-            key={i}
-            title={data.title}
-            year={data.year}
-            tags={data.tags}
-            body={data.body}
-            imageSrc={data.imageSrc}
-          />
-          // <Divider />
+          <>
+            <FeatureWorkCard
+              key={i}
+              projectURL={data.projectURL}
+              title={data.title}
+              year={data.year}
+              tags={data.tags}
+              body={data.body}
+              imageSrc={data.imageSrc}
+            />
+            <Divider />
+          </>
         ))}
       </Box>
     </Container>

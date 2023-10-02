@@ -18,6 +18,7 @@ export default function projects() {
             desc={project.desc}
             tags={project.tags}
             imageSrc={project.imageSrc}
+            projectURL={project.projectURL}
           />
         ))}
       </Box>

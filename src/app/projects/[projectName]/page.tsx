@@ -10,8 +10,14 @@ interface pagePromps {
 const page = ({ params }: pagePromps) => {
   return (
     <Container maxWidth="lg">
-      <Box>
-        <Typography>othername is: {params.projectName} </Typography>
+      <Box
+        sx={{
+          display: "flex column",
+          border: "1px solid red",
+          textAlign: "center",
+        }}
+      >
+        <Typography variant="h3">{params.projectName} </Typography>
       </Box>
     </Container>
   );
