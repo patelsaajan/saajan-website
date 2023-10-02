@@ -23,7 +23,7 @@ const HomeHero = () => {
       >
         <Box>
           <Typography variant="h3" mt="20px">
-            Hi, i am Saajan,
+            Hi, I am Saajan,
           </Typography>
           <Typography variant="h4">Bristol Univeristy MEng graduate</Typography>
           <Box sx={{ display: "flex column" }}>

@@ -30,6 +30,7 @@ const BriefProjectCards = ({
         gap: "20px",
         borderRadius: "16px",
         transition: "200ms all ease-out",
+        alignItems: "center",
         "&:hover": { cursor: "pointer", transform: "scale(1.05)" },
       }}
     >
