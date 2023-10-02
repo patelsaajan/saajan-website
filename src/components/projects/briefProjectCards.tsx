@@ -76,8 +76,9 @@ const BriefProjectCards = ({
             {date}
           </Typography>
 
-          {tags.map((tag) => (
+          {tags.map((tag, i) => (
             <Typography
+              key={i}
               sx={{
                 backgroundColor: "primary.main",
                 px: "10px",
