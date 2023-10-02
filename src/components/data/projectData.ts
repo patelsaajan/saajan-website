@@ -11,7 +11,7 @@ const projectsData = [
     title: "Exploring Robotics: 3pi+ Line Following Adventure",
     date: "Mar 2023",
     tags: ["Arduino (C/C++)"],
-    desc: "C developed an algorithm for the 3pi+ robot to navigate an unknown, unique maze, incorporating 30, 45, and 180-degree turns. The algorithm also includes a detection mechanism to identify when the maze has been successfully completed and a 'return home' feature. This algorithm was written in the Arduino GUI and language, which is based on C/C++.",
+    desc: "I developed an algorithm for the 3pi+ robot to navigate an unknown, unique maze, incorporating 30, 45, and 180-degree turns. The algorithm also includes a detection mechanism to identify when the maze has been successfully completed and a 'return home' feature. This algorithm was written in the Arduino GUI and language, which is based on C/C++.",
     imageSrc: "/imgs/project/3piRobot.jpeg",
     active: false,
   },

@@ -12,7 +12,7 @@ import React from "react";
 type cardPrompts = {
   title: string;
   year: string;
-  tags: string;
+  tags: string[];
   body: string;
   imageSrc: string;
 };
@@ -34,8 +34,9 @@ const FeatureWorkCard = ({
         gap: "20px",
         transition: "all 200ms ease-out",
         borderRadius: "16px",
+        alignItems: "center",
         "&:hover": {
-          boxShadow: 3,
+          // boxShadow: 3,
           cursor: "pointer",
         },
       }}
@@ -45,8 +46,8 @@ const FeatureWorkCard = ({
       ) : (
         <Image
           alt={"feature work image"}
-          width={246}
-          height={180}
+          width={200}
+          height={200}
           src={imageSrc}
           style={{ borderRadius: "8px" }}
         />
@@ -55,8 +56,9 @@ const FeatureWorkCard = ({
         <Typography variant="h5" fontWeight={"800"}>
           {title}
         </Typography>
-        <Box sx={{ display: "flex", gap: "20px", mt: "20px" }}>
-          <Box
+        <Box sx={{ display: "flex", gap: "10px" }}>
+          <Typography
+            variant="body2"
             sx={{
               backgroundColor: "text.secondary",
               color: "#FFFF",
@@ -65,13 +67,31 @@ const FeatureWorkCard = ({
               borderRadius: "16px",
               fontSize: "small",
               fontWeight: "800",
+              width: "80px",
+              my: "10px",
             }}
           >
             {year}
-          </Box>
-          <Typography sx={{ color: "#8695A4" }}>{tags}</Typography>
+          </Typography>
+          {tags.map((tag) => (
+            <Typography
+              sx={{
+                backgroundColor: "primary.main",
+                px: "10px",
+                pt: "1.5px",
+                color: "#FFFF",
+                textAlign: "center",
+                borderRadius: "16px",
+                fontSize: "small",
+                fontWeight: "800",
+                my: "10px",
+              }}
+            >
+              {tag}
+            </Typography>
+          ))}
         </Box>
-        <Typography mt="20px" color="#21243D" sx={{ fontSize: "small" }}>
+        <Typography mt="5px" color="#21243D" sx={{ fontSize: "small" }}>
           {body}
         </Typography>
       </Box>

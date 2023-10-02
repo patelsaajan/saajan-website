@@ -75,6 +75,25 @@ const BriefProjectCards = ({
           >
             {date}
           </Typography>
+
+          {tags.map((tag) => (
+            <Typography
+              sx={{
+                backgroundColor: "primary.main",
+                px: "10px",
+                pt: "1.5px",
+                color: "#FFFF",
+                textAlign: "center",
+                ml: "10px",
+                borderRadius: "16px",
+                fontSize: "small",
+                fontWeight: "800",
+                my: "10px",
+              }}
+            >
+              {tag}
+            </Typography>
+          ))}
           {active ? (
             <Typography
               sx={{
@@ -96,25 +115,6 @@ const BriefProjectCards = ({
           ) : (
             <></>
           )}
-
-          {tags.map((tag) => (
-            <Typography
-              sx={{
-                backgroundColor: "primary.main",
-                px: "10px",
-                pt: "1.5px",
-                color: "#FFFF",
-                textAlign: "center",
-                ml: "10px",
-                borderRadius: "16px",
-                fontSize: "small",
-                fontWeight: "800",
-                my: "10px",
-              }}
-            >
-              {tag}
-            </Typography>
-          ))}
         </Box>
         <Typography>{desc}</Typography>
       </Box>

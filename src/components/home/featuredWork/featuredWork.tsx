@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Divider, Typography } from "@mui/material";
 import React from "react";
 import FeatureWorkCard from "./featureWorkCard";
 import featuredWorkData from "@/components/data/featuredWork";
@@ -12,7 +12,7 @@ const FeaturedWork = () => {
         }}
       >
         <Typography
-          fontSize={22}
+          variant="h4"
           color={"#21243D"}
           sx={{
             textAlign: { xs: "center", md: "left" },
@@ -22,13 +22,16 @@ const FeaturedWork = () => {
         </Typography>
 
         {featuredWorkData.map((data) => (
-          <FeatureWorkCard
-            title={data.title}
-            year={data.year}
-            tags={data.tags}
-            body={data.body}
-            imageSrc={data.imageSrc}
-          />
+          <>
+            <FeatureWorkCard
+              title={data.title}
+              year={data.year}
+              tags={data.tags}
+              body={data.body}
+              imageSrc={data.imageSrc}
+            />
+            <Divider />
+          </>
         ))}
       </Box>
     </Container>
