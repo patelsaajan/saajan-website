@@ -1,7 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
-import { parse } from "path";
 import React from "react";
-import { Route } from "react-router-dom";
+import matter from "gray-matter";
 
 interface pagePromps {
   params: { projectName: string };
