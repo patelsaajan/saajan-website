@@ -8,9 +8,16 @@ type cardPrompts = {
   date: string;
   desc: string;
   imageSrc: string;
+  active: boolean;
 };
 
-const BriefProjectCards = ({ title, date, desc, imageSrc }: cardPrompts) => {
+const BriefProjectCards = ({
+  title,
+  date,
+  desc,
+  active,
+  imageSrc,
+}: cardPrompts) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
@@ -48,22 +55,45 @@ const BriefProjectCards = ({ title, date, desc, imageSrc }: cardPrompts) => {
         <Typography variant="h5" fontWeight={700}>
           {title}
         </Typography>
-        <Typography
-          variant="body2"
-          sx={{
-            backgroundColor: "text.secondary",
-            color: "#FFFF",
-            px: "10px",
-            pt: "1.5px",
-            borderRadius: "16px",
-            fontSize: "small",
-            fontWeight: "800",
-            width: "80px",
-            my: "10px",
-          }}
-        >
-          {date}
-        </Typography>
+        <Box sx={{ display: "flex" }}>
+          <Typography
+            variant="body2"
+            sx={{
+              backgroundColor: "text.secondary",
+              color: "#FFFF",
+              px: "10px",
+              pt: "1.5px",
+              borderRadius: "16px",
+              fontSize: "small",
+              fontWeight: "800",
+              width: "80px",
+              my: "10px",
+            }}
+          >
+            {date}
+          </Typography>
+          {active ? (
+            <Typography
+              sx={{
+                backgroundColor: "green",
+                width: "100px",
+                px: "10px",
+                pt: "1.5px",
+                color: "#FFFF",
+                textAlign: "center",
+                ml: "10px",
+                borderRadius: "16px",
+                fontSize: "small",
+                fontWeight: "800",
+                my: "10px",
+              }}
+            >
+              In Progress
+            </Typography>
+          ) : (
+            <></>
+          )}
+        </Box>
         <Typography>{desc}</Typography>
       </Box>
     </Box>

@@ -13,6 +13,7 @@ export default function projects() {
         {projectsData.map((project) => (
           <BriefProjectCards
             title={project.title}
+            active={project.active}
             date={project.date}
             desc={project.desc}
             imageSrc={project.imageSrc}

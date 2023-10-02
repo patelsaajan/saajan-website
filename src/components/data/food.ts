@@ -1,7 +1,7 @@
 const foodData = [
   {
     primaryDish: "Incredible Sauce Tofu",
-    secondaryDish: " with sweat & sour roasted chickpeas and steamed kale",
+    secondaryDish: " with sweet & sour roasted chickpeas and steamed kale",
     imageSrc: "/imgs/food/foodImage1.jpeg",
     desc: " This is where a short description of the food will be, what is included in it and any other things that i think will be useful about the recipe",
   },
