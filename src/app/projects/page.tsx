@@ -16,6 +16,7 @@ export default function projects() {
             active={project.active}
             date={project.date}
             desc={project.desc}
+            tags={project.tags}
             imageSrc={project.imageSrc}
           />
         ))}

@@ -9,6 +9,7 @@ type cardPrompts = {
   desc: string;
   imageSrc: string;
   active: boolean;
+  tags: string[];
 };
 
 const BriefProjectCards = ({
@@ -17,6 +18,7 @@ const BriefProjectCards = ({
   desc,
   active,
   imageSrc,
+  tags,
 }: cardPrompts) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -94,6 +96,25 @@ const BriefProjectCards = ({
           ) : (
             <></>
           )}
+
+          {tags.map((tag) => (
+            <Typography
+              sx={{
+                backgroundColor: "primary.main",
+                px: "10px",
+                pt: "1.5px",
+                color: "#FFFF",
+                textAlign: "center",
+                ml: "10px",
+                borderRadius: "16px",
+                fontSize: "small",
+                fontWeight: "800",
+                my: "10px",
+              }}
+            >
+              {tag}
+            </Typography>
+          ))}
         </Box>
         <Typography>{desc}</Typography>
       </Box>
