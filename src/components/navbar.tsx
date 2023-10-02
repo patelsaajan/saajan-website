@@ -60,9 +60,10 @@ function ResponsiveAppBar() {
               justifyContent: { xs: "center", lg: "flex-end" },
             }}
           >
-            {pages.map((page) => (
+            {pages.map((page, i) => (
               <Button
                 disableRipple
+                key={i}
                 sx={{
                   color: "black",
                   fontSize: "Large",

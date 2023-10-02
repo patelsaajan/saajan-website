@@ -50,8 +50,9 @@ const RecentPosts = () => {
             justifyContent: "center",
           }}
         >
-          {postDataArray.map((card) => (
+          {postDataArray.map((card, i) => (
             <RecentPostCard
+              key={i}
               title={card.title}
               date={card.date}
               tags={card.tags}
