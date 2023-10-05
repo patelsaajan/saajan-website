@@ -12,18 +12,18 @@ import React from "react";
 
 type cardPrompts = {
   title: string;
-  year: string;
+  date: string;
   tags: string[];
-  body: string;
+  desc: string;
   imageSrc: string;
   projectURL: string;
 };
 
 const FeatureWorkCard = ({
   title,
-  year,
+  date,
   tags,
-  body,
+  desc,
   imageSrc,
   projectURL,
 }: cardPrompts) => {
@@ -75,7 +75,7 @@ const FeatureWorkCard = ({
                 my: "10px",
               }}
             >
-              {year}
+              {date}
             </Typography>
             {tags.map((tag, i) => (
               <Typography
@@ -97,7 +97,7 @@ const FeatureWorkCard = ({
             ))}
           </Box>
           <Typography mt="5px" color="#21243D" sx={{ fontSize: "small" }}>
-            {body}
+            {desc}
           </Typography>
         </Box>
       </Box>
