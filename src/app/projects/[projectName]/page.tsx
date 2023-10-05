@@ -27,7 +27,9 @@ const page = ({ params }: pagePromps) => {
   const post = getPostConent(slug);
   return (
     <Container maxWidth="lg">
-      <Typography variant="h4">{post.data.title}</Typography>
+      <Typography variant="h5" sx={{ textAlign: "center", my: "50px" }}>
+        {post.data.title}
+      </Typography>
       <Markdown>{post.content}</Markdown>
     </Container>
   );
