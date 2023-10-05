@@ -8,6 +8,9 @@ active: false
 featured: true
 ---
 
+<p align="center">
+<img src="/imgs/project/IRP/FullDiagram.png" width="500" title="Full Circuit Diagram"></p>
+
 I was recently granted access to the [OpenAI GPT-3 Beta](https://beta.openai.com/), a very powerful language model that can be used to do all sorts of magic like chat bot generation, article summary, and a [lot more cool stuff](https://beta.openai.com/examples).
 
 But the application that really excited me was creative writing (stuff like SEO generation is cool and all, but a also a bit dry for my taste).
