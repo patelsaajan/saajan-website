@@ -27,9 +27,9 @@ const FeaturedWork = () => {
               key={i}
               projectURL={data.projectURL}
               title={data.title}
-              year={data.year}
+              date={data.year}
               tags={data.tags}
-              body={data.body}
+              desc={data.body}
               imageSrc={data.imageSrc}
             />
             <Divider />
