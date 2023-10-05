@@ -1,23 +1,25 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import matter from "gray-matter";
+import fs from "fs";
+import Markdown from "markdown-to-jsx";
+
+const getPostConent = (slug: string) => {
+  const folder = "src/components/data/blogPosts/";
+  const file = `${folder}${slug}.md`;
+  const content = fs.readFileSync(file, "utf8");
+  return content;
+};
 
 interface pagePromps {
   params: { projectName: string };
 }
 
 const page = ({ params }: pagePromps) => {
+  const slug = params.projectName;
+  const content = getPostConent(slug);
   return (
     <Container maxWidth="lg">
-      <Box
-        sx={{
-          display: "flex column",
-          border: "1px solid red",
-          textAlign: "center",
-        }}
-      >
-        <Typography variant="h3">{params.projectName} </Typography>
-      </Box>
+      <Markdown>{content}</Markdown>
     </Container>
   );
 };
