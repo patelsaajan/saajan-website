@@ -2,8 +2,24 @@ import { Box, Container, Divider, Typography } from "@mui/material";
 import React from "react";
 import FeatureWorkCard from "./featureWorkCard";
 import featuredWorkData from "@/components/data/featuredWork";
+import getPostMetadata from "@/components/getPostMetadata";
+import BriefProjectCards from "@/components/projects/briefProjectCards";
+
+// const postMetadata = getPostMetadata("src/components/data/blogPosts");
 
 const FeaturedWork = () => {
+  // const postPostMetadata = postMetadata;
+  // const postPreviews = postPostMetadata.map((project) => (
+  //   <BriefProjectCards
+  //     title={project.title}
+  //     active={project.active}
+  //     date={project.date}
+  //     desc={project.desc}
+  //     tags={project.tags}
+  //     imageSrc={project.imageSrc}
+  //     projectURL={project.slug}
+  //   />
+  // ));
   return (
     <Container maxWidth="lg" sx={{ marginTop: "80px", marginBottom: "30px" }}>
       <Box
