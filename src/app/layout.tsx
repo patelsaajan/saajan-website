@@ -15,6 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <MUIThemeProvider>
+      <title>Saajan's Website</title>
       <html lang="en">
         <body className={inter.className}>
           <ResponsiveAppBar />
