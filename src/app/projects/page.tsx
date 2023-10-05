@@ -3,20 +3,12 @@ import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import getPostMetadata from "@/components/getPostMetadata";
 
-const postMetadata = getPostMetadata("src/components/data/blogPosts/");
+const postMetadata = getPostMetadata("src/components/data/projectPosts/");
 
 export default function projects() {
   const postPostMetadata = postMetadata;
-  const postPreviews = postPostMetadata.map((project) => (
-    <BriefProjectCards
-      title={project.title}
-      active={project.active}
-      date={project.date}
-      desc={project.desc}
-      tags={project.tags}
-      imageSrc={project.imageSrc}
-      projectURL={project.slug}
-    />
+  const postPreviews = postPostMetadata.map((post) => (
+    <BriefProjectCards key={post.slug} {...post} projectURL={post.slug} />
   ));
   return (
     <>
