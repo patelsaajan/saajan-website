@@ -5,7 +5,7 @@
   desc: "Web development and application building have intrigued me for a while. Since completing university, I've had the opportunity to delve into this passion while traveling throughout Southeast Asia. This website is constructed using TypeScript, React, and the MUI library, all with a foundation of novice knowledge."
   imageSrc: "/imgs/project/typescript.png"
   active: true
-  projectURL: "creating-website-2023"
+  featured: false
 ---
 
 I was recently granted access to the [OpenAI GPT-3 Beta](https://beta.openai.com/), a very powerful language model that can be used to do all sorts of magic like chat bot generation, article summary, and a [lot more cool stuff](https://beta.openai.com/examples).

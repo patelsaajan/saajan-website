@@ -1,11 +1,10 @@
 ---
-title: "Exploring Robotics: 3pi+ Line Following Adventure"
-date: "Mar 2023"
-tags: ["Arduino (C/C++)"]
-desc: "I developed an algorithm for the 3pi+ robot to navigate an unknown, unique maze, incorporating 30, 45, and 180-degree turns. The algorithm also includes a detection mechanism to identify when the maze has been successfully completed and a 'return home' feature. This algorithm was written in the Arduino GUI and language, which is based on C/C++."
-imageSrc: "/imgs/project/3piRobot.jpeg"
+title: "SolarBot: Building an Autonomous Solar Robot"
+date: "May 2023"
+tags: ["Arduino (C/C++)", "Python"]
+desc: "During my master's year group project, we were assigned the task of constructing a solar-powered delivery robot, akin to the design of Amazon Scout. I assumed the responsibility for the automation and microcontroller system. For this project, I employed Python and the Arduino language, which is based on C/C++."
+imageSrc: "/imgs/project/Sally.jpeg"
 active: false
-projectURL: "linefollowingrobot"
 featured: true
 ---
 
