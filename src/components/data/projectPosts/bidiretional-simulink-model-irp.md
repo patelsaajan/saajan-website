@@ -8,285 +8,55 @@ active: false
 featured: true
 ---
 
-<p align="center">
+<p style{align="center"}>
 <img src="/imgs/project/IRP/FullDiagram.png" width="500" title="Full Circuit Diagram"></p>
 
-I was recently granted access to the [OpenAI GPT-3 Beta](https://beta.openai.com/), a very powerful language model that can be used to do all sorts of magic like chat bot generation, article summary, and a [lot more cool stuff](https://beta.openai.com/examples).
+<div style="margin-top:30px; text-align: justify; background-color: #EDF7FA"> ### Project Background
 
-But the application that really excited me was creative writing (stuff like SEO generation is cool and all, but a also a bit dry for my taste).
+As part of my master's degree in engineering, I undertook an individual research project. The project required selecting an area of engineering that piqued my interest and, with the guidance of a tutor, defining the scope until a project title could be established. The project spanned three months and resulted in my achievement of a First-Class distinction. You can access the written paper for this project **[here](https://beta.openai.com/)**.
 
-I had previously seen [AI Dungeon](https://play.aidungeon.io/) use GPT to create an interactive text adventure game (try it, it's fun!) and that got me curious about what else the AI was capable of — especially when elements of both _creativity_ and _structure_ were involved.
+</div>
 
-I decided to test it against poetry and story generation, and this is the resulting write-up of those experiments.
+<div style="margin-top:30px; text-align: justify"> ### Abstract
 
-## What is GPT-3?
+Fossil fuels are currently being phased out by many sectors to reduce greenhouse gas emissions to help preserve the current global climate. The energy sector could reduce its emissions by switching to renewable clean energy sources, while the transport sector could reduce emissions through the transition to battery electric vehicles (BEVs) technology. By acting as energy stores when idle, BEVs can aid the adoption of renewable clean energy sources and help reduce the cost of the energy sector's new infrastructure. Furthermore, owners of the BEVs could be financially compensated for their participation. The BEV would be connected to the grid through a bi-directional charger that could send or receive power. Due to current manufacturer trends, this report looked at the design and implementation of a bi-directional charger for an 800V BEV architecture. A charger model and its controllers were built in Simulink with the preliminary simulation results looking promising and offered a control systems to implement into a hardware testing.
 
-[GPT-3](https://arxiv.org/abs/2005.14165) is a language model developed by [OpenAI](https://beta.openai.com/). To the average developer (like me), it's basically a magical black-box that is extremely powerful at natural language use-cases.
+</div>
 
-It was trained on an estimated **45 TB** of text data (pretty much anything that is publicly available on the internet)!
+<div style="margin-top:30px; text-align: justify"> ### Motivation 
+<p>
+The UK has seen a 9.5% decrease in its greenhouse gas (GHG) emissions between 2019 and 2020 which is the largest proportional drop seen in the UK in a single year since the start of the data series in 1990 . Despite this progress, further action is still required to ensure the global average temperature does not rise by more than 1.5°C when compared with pre-industrial levels. The latest IPCC report predicts that not meeting this target could cause an increase in the ferocity of global floods and fires, the failure of crops and forced migration due to rising sea levels .
+</p>
+<p style="margin-top:20px">
+The UK government has pledged to reduce UK GHG emissions by at least 80% by the year 2050. To achieve this, sectors such as transport, energy, industry and domestic must play their part. Currently, the goal for the transport sector is to eliminate the use of internal combustion engine vehicles (ICEVs) and move to electric vehicles (EVs) such as battery electric vehicles (BEVs) or fuel cell electric vehicles (FCEVs). The switch to EVs means that GHGs are not produced directly; however, manufacturing and power supply still need to be taken into consideration. Most of the emissions from an EV are produced during its manufacturing, and combined with a high GHG emitting grid results in marginal differences between EVs and ICEVs. Nonethe- less, more recent comparative studies showed that BEVs produced 35-50% of the GHG emissions over their life cycle when compared with their ICEV counterpart; factoring in current and future predicted grid supply sources. Moreover, the UK government has a target of 2035 for the energy sector to be only reliant on clean energy, subject to security of supply. One of the fundamental limitations of renewable clean sources is their dependence on external factors such as light intensity or wind speed. Therefore, during high production times, surplus energy must be stored in preparation for when the demand is greater than the supply. Addi-
+tional storage infrastructure needs to be built alongside new clean energy plants for this to be a viable option. Unfortunately, this additional storage increases the cost of harnessing renewable energy sources; however, the rising popularity of BEVs is a potential solution to reducing this cost. Essentially, BEVs are large battery on wheels, so a bidirectional charger can enable a vehicle to store energy for later use. The BEV is said to be in grid to vehicle (G2V) mode while charging and in vehicle to grid (V2G) mode when supplying power to the grid. It is estimated that personal vehicles are only active for 10% of the day; therefore, these BEVs could be utilised for grid applications for the other 90%. This use of BEVs could also be financially beneficial for the owner as they could be compensated for their participation, with one trial conducted in the UK seeing participants earning as much as £725 in a year. Alternatively, the vehicle could be used as a house battery system to help increase self-sufficiency, especially when paired with rooftop solar panels. This technology is not far off what is currently a reality with smart charging, where BEVs are charged during off-peak times at reduced costs. V2G would take this a step further and allow the owner to sell back to the grid when demand is higher. A few obstacles in the adoption of this technology are the price of EVs, charging infrastructure across the country and lack of global technological standardisation.
+</p>
+<p style="margin-top:20px">
 
-We can literally ask it to do anything. For example, if I ask for steps to bake a cake it gives me:
+Currently, there is a split in the EV market where manufacturers like Hyundai, Audi and Porsche have moved to an 800V EV architecture while others have stayed with the conventional 400V architecture. Moving to an 800V architecture is the next logical step for a BEV as it can offer better charge times at fast charging stations. For example, Porsche claim that their Taycan model can be charged from 5% to 80% in 22 5 minutes. Addi- tional benefits of a higher voltage system include: smaller charging currents which reduce overheating and allow better power retention; smaller cable sizes which reduce raw materials and thereby subsequent costs; reductions in the overall weight of vehicles resulting in increases in both their range, acceleration and energy savings.
 
-```
-1. Preheat oven to 350°F.
-2. Grease and flour a 9-inch round cake pan.
-3. Stir cake mix, oil, eggs, and water in a large bowl with a spoon until blended.
-4. Pour batter into prepared pan.
-```
+</p>
+<p style="margin-top:20px">
 
-Alternatively, I can provide it with an example of what I want. Such as:
+Based on these current trends, the focus of this report will be the design and implementation of a bi-directional charger for an 800V EV architecture. This report will be split into five sections: the proposed charger topol- ogy for the model; the design of the G2V mode of the charger; the design of the V2G mode of the charger; the operation of the devised control systems of the charger; the performance of the model and closed-loop
+controllers.
 
-```
-[15 mins] Walk or jog lightlyy to warm up.
-[10 mins] 3 sets of Squats
-```
+</p>
 
-And it will understand that we're writing a work-out routine, and continue in that style — responding with something like this:
+</div>
+<div style="margin-top:30px; text-align: justify"> ### Conclusion
 
-```
-[10 mins] 3 sets of Push ups (use the bench/steps if you can't do regular ones)
-[10 mins] 3 sets of Lunges
-[10 mins] 3 sets of Sit ups
-[10 mins] 3 sets of Tricep dips
-[10 mins] 3 sets of
-```
+<p style{align="center"}>
+<img src="/imgs/project/IRP/SimulinkModel.png" width="700" title="Full Simulink Model"></p>
 
-It can also do some pretty zany stuff, like translating from English to emoji.
+<p style="margin: 20px">
+This project documented the design process of a bi-directional charger that can either work on a 400V or 800V BEV architecture. Two models of the charger were created in Simulink to test the closed-loop control systems, one mode for the G2V and the other for V2G. The buck, boost and inverter controllers worked as intended; however, further work is still needed on the rectifier control system, due to the slightly irregular output. It can be concluded that the controllers for each operation mode work, and therefore the charger model is functional. This technology will become increasingly important in the next few years as we move away from fossil fuels and aim to reduce our GHG emissions. It is important that the foundations for a more sustainable tomorrow are placed as early as possible, as infrastructure takes time to adjust.
 
-```
-I love pizza and beer.
-😀❤️🍕🍺
-
-I flew to Japan and ate some Sushi.
-✈️🇯🇵😋 🍣
-
-I was snowboarding in France.
-🏂❄️🇫🇷
-```
-
-So as you can see, there's just endless amount of ways you can interact with the AI.
-
-It's up to us to experiment with it and see how it can be useful for any particular problem. Let's give it a go!
-
-## 💡 Method
-
-Today, I want to see if this AI is able to understand and generate poetry. Why poetry? Because I think it's a relatively simple example, and has three distinct dimensions that we can easily assess it on:
-
-- Tone
-- Content
-- Structure
-
-OpenAI lets customers interact with GPT-3 via an API, so that's how I'll be using it as well.
-
-I'll be providing both direct requests and examples (with increasing complexity), and let the AI come up with **20 responses** for each prompt.
-
-Additionally, for my example prompts, I'll avoid using existing text—the AI may have already seen it in the training data and that might skew the results.
-
-I'll then talk about the best samples in each batch and anything I find interesting about them.
-
-Also I've pushed the [full set of results on GitHub](https://github.com/pixegami/gpt-3-poetry-results) if you wanted to check out the rest of the samples.
-
-## 🧪 Results
-
-### ✍ Short poem
-
-As a baseline, I want to know how much the AI understands about the tone, structure and content of a 'poem.'
-
-```
-[Prompt]
-Write a short poem.
-
-[Sample AI Response]
-Snow is falling,
-
-silently,
-
-the ground a white blanket.
-Heroes dream in peace,
-where they sleep.
-```
-
-It's a pretty good start! It's structured but it doesn't rhyme. The language and story also have a 'poetic' feel to it. Not bad.
-
-Amongst the other 20 samples were also hilarious rubbish like this one 🤡 :
-
-```
-[Sample AI Response]
-Life is like a beach
-Where we take our coconut and whack it
-or chew on it
-
-There are also other beaches
-Where we can drink some sand and ruminate
-```
-
-Not quite hitting the mark, but still pretty interesting.
-
-### ✍ Short poem with theme
-
-Next, I wanted to extend the prompt with some theme, just to see how it is able to assimilate that into its response.
-
-I picked a theme that isn't typically associated with poetry: **Space Exploration** (also because I've been watching a lot of old-school sci-fi stuff recently).
-
-```
-[Prompt]
-Write a short poem about space exploration.
-
-[Sample AI Response]
-I hope the stars align
-For I dream and explore
-Beyond what we see,
-With the most amazing views
-```
-
-It's definitely found a way to put the space theme in there — not too unnaturally either, because it still links it to 'emotional' concepts like 'dream', 'hope' and 'explore.'
-
-### ✍ Short poem with 2x themes
-
-Now I know it can handle one theme, let's add another one to the mix and see what happens. Something _not_ commonly associated with either poetry nor space (we want to challenge the AI right?) — how about...
-
-```
-[Prompt]
-Write a short poem about space exploration and parkour.
-
-[Sample AI Response]
-Taking the stars and reaching for the moon
-Afraid to look down
-She jumps, leaps, and lands
-```
-
-Not bad. Here's another sample.
-
-```
-[Sample AI Response]
-Parkour through the cosmos
-jump to the moon and land with a moonwalk
-push off from the Earth, do a headspin
-jump to Mars, make it look easy
-```
-
-I'm impressed that instead of just shoe-horning in the parkour theme, it's found words and phrases that have a natural connection with the space theme — like 'leap' and 'moonwalk.'
-
-It was at this point that the [vector aspect](https://jalammar.github.io/illustrated-gpt2/) of the model started to really click for me.
-
-It's as if it found the [cross-product](https://en.wikipedia.org/wiki/Cross_product) between the 'space' vector and the 'parkour' vector (this is a gross over-simplification), and applied that to the poem.
-
-### ✍ Children's Story (Rhyming Verse)
-
-My next task was to try something a bit more directed. This time I will give it a concrete example (with a tone, structure and story) to continue with.
-
-To keep it (relatively) easy for the AI, I started with a rhyming verse, like something from a Dr Seuss book:
-
-```
-[Prompt]
-It's a sunny day.
-And Milky wants to play!
-He looks for his ball,
-but it's not in the hall.
-```
-
-> By the way Milky's the name of my dog, and this literally is the story of his life every morning.
-
-Some of the results from this were super interesting. My favorite one is:
-
-```
-[Sample AI Response]
-It's not on the stairs.
-It's not in the yard.
-Maybe it's in the attic,
-somewhere really dark.
-```
-
-This one nails the tone — notice that it repeats the "It's not at \_\_\_" three times? That's just like what a children's book would do!
-
-It also introduces some progression and drama into the story. Now our character has an idea where the ball is (the attic), but there is a sense of danger and risk in the way (somewhere really dark).
-
-Structurally, "yard" and "dark" is also partial rhyme, but I think that was probably a fluke (out of the 20 samples, maybe only 2-3 managed to rhyme).
-
-Still, I was really impressed with this result. Here's something else that I observed as well:
-
-```
-[Sample AI Response]
-Then in through the window
-stumbles a dog with a bark.
-It's Billy, his brother.
-```
-
-_Dog!_ It figured out that Milky in this story is a dog, even though that was never explicitly mentioned in the prompt. It might be a small detail, but I was low-key amazed by that.
-
-### ✍ Fantasy Fiction
-
-Next let's test GPT-3's ability for creative story-telling as well. Here's a rhyming story with a bit of drama, written in a high-fantasy style:
-
-```
-[Prompt]
-A mysterious curse sweeps the land,
-and into townsfolk's hearts expand.
-One broken link and night shall fall,
-eternal sleep will enslave them all.
-
-But there is hope
-```
-
-I ended the prompt with `But there is hope` because I was interested to see if the AI can progress (and negate!) the verse before it, rather than extend the example (which we already know it can do).
-
-The results for this prompt were probably the most entertaining for me to read. My favorite:
-
-```
-[Sample AI Response]
-a prophecy is spoken,
-Which tells of one who will restore the sun.
-She comes with a prince and shall break the spell,
-and together save the land from hell.
-```
-
-So many things I love about this response.
-
-- It introduces a _heroine_ to the story (+1 for gender diversity!)
-- It writes a sensible continuation of the prompt.
-- It even manages rhyming (between 'one/sun', and 'spell/hell').
-
-A lot of the other samples were also quite interesting (check them out [here](https://github.com/pixegami/gpt-3-poetry-results)) and full of creative ideas.
-
-### ✍ Hacker Rap
-
-And finally just for a bit of fun, let's see what it can do with hacker rap 🤣 :
-
-```
-[Prompt]
-When I'm tappin' I'm trapped in the screen
-I escape when the codebase is clean
-```
-
-I loved it's work here as well. It did a good job picking up on both structure (rhyme) and content.
-
-```
-[Sample AI Response]
-I can write code, I can code all night
-You are my code and I am your light
-We're in this together from dusk 'til dawn.
-We got the skill to make things run
-```
-
-I also found this particular choice of words interesting:
-
-```
-The refactoring was a success, great!
-And I will not commit the same crime
-So I'm testin', testin', testin, testin' again
-Just when I've seen enough, it happens again
-```
-
-"Commit the same crime" — does it know the significance of the word _commit_ for developers? 🤯
-
-## Wrap Up
-
-That's pretty much all I had to share this time around. GPT-3 has definitely impressed me with it's capabilities, and now I have a stronger understanding how this power can be wielded.
-
-In a batch of 20 samples, not all of them are great—but the good ones are sometimes _really_ good.
-
-If I wanted to use it in this way, I'd need a process that allows a human (me) to select and use the best samples.
-
-I hope this was interesting! I also covered everything here in a video as well (which I geared towards less technical viewers) which you can check out [here](https://www.youtube.com/watch?v=r3zKcL0iGeA&t=47s).
-
-Thanks for reading!
+<div style="margin: 50px">
+<p style{align="center"}>
+<img src="/imgs/project/IRP/Gridg2v.jpg" width="500" title="Power absorbtion mode"></p>
+<p style{align="center"}>
+<img src="/imgs/project/IRP/v2Grid.jpg" width="500" title="Power injection mode">
+</p>
+</div>
+</div>
