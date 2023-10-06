@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
 
 const getPostConent = (slug: string) => {
-  const folder = "src/components/data/projectPosts/";
+  const folder = "./posts/projectsMarkdownFiles/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
@@ -14,7 +14,7 @@ const getPostConent = (slug: string) => {
 };
 
 export const generateStaticParams = async () => {
-  const posts = getPostMetadata("src/components/data/projectPosts");
+  const posts = getPostMetadata("./posts/projectsMarkdownFiles");
   return posts.map((post) => ({ slug: post.slug }));
 };
 
