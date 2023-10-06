@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
 import path from "path";
 
-const getPostConent = (slug: string) => {
+const getPostContent = (slug: string) => {
   const folder = path.join(process.cwd(), "posts/projectsMarkdownFiles/");
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
@@ -27,7 +27,7 @@ interface pagePromps {
 
 const page = ({ params }: pagePromps) => {
   const slug = params.projectName;
-  const post = getPostConent(slug);
+  const post = getPostContent(slug);
   return (
     <Container maxWidth="lg">
       <Typography
