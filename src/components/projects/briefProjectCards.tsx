@@ -30,27 +30,34 @@ const BriefProjectCards = ({
       <Box
         sx={{
           mb: "20px",
-          display: "flex",
+          display: isMobile ? "flex column" : "flex",
           border: "2px solid black",
           p: "10px",
           gap: "20px",
           borderRadius: "16px",
           transition: "200ms all ease-out",
-          alignItems: "center",
+          textAlign: "justify",
           "&:hover": { cursor: "pointer", transform: "scale(1.05)" },
         }}
       >
-        {isMobile ? (
-          <></>
-        ) : (
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
           <Image
             src={imageSrc}
             width={200}
             height={200}
             alt={"picture of the 3pi+ robot"}
-            style={{ border: "2px solid black", borderRadius: "16px" }}
+            style={{
+              border: "2px solid black",
+              borderRadius: "16px",
+              margin: "20px",
+            }}
           />
-        )}
+        </Box>
 
         <Box
           sx={{
