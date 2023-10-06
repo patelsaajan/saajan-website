@@ -16,7 +16,7 @@ const featuredWorkData = [
     body: "I developed an algorithm for the 3pi+ robot to navigate an unknown, unique maze, incorporating 30, 45, and 180-degree turns. The algorithm also includes a detection mechanism to identify when the maze has been successfully completed and a 'return home' feature. This algorithm was written in the Arduino GUI and language, which is based on C/C++.",
     imageSrc: "/imgs/project/3piRobot.jpeg",
     active: false,
-    projectURL: "linefollowingrobot",
+    projectURL: "line-following-robot",
   },
 
   {
@@ -27,7 +27,7 @@ const featuredWorkData = [
     body: "My individual research project for my master's degree involved designing a Grid-to-Vehicle (G2V) simulation tailored to 800V electric vehicles (EVs). G2V technology has the potential to significantly enhance renewable energy capacity and potentially generate additional revenue for EV owners.",
     imageSrc: "/imgs/project/SimulinkModel.png",
     active: false,
-    projectURL: "irp",
+    projectURL: "bidiretional-simulink-model-irp",
   },
 ];
 
