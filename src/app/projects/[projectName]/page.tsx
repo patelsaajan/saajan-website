@@ -4,9 +4,10 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getPostMetadata from "@/components/getPostMetadata";
+import path from "path";
 
 const getPostConent = (slug: string) => {
-  const folder = "posts/projectsMarkdownFiles/";
+  const folder = path.join(process.cwd(), "posts/projectsMarkdownFiles/");
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
@@ -14,7 +15,9 @@ const getPostConent = (slug: string) => {
 };
 
 export const generateStaticParams = async () => {
-  const posts = getPostMetadata("posts/projectsMarkdownFiles");
+  const posts = getPostMetadata(
+    path.join(process.cwd(), "posts/projectsMarkdownFiles")
+  );
   return posts.map((post) => ({ slug: post.slug }));
 };
 
