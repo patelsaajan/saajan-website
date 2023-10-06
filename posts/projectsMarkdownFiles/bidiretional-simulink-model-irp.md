@@ -13,7 +13,7 @@ featured: true
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA"> ### Project Background
 
-As part of my master's degree in engineering, I undertook an individual research project. The project required selecting an area of engineering that piqued my interest and, with the guidance of a tutor, defining the scope until a project title could be established. The project spanned three months and resulted in my achievement of a First-Class distinction. You can access the written paper for this project **[here](https://beta.openai.com/)**.
+As part of my master's degree in engineering, I undertook an individual research project. The project required selecting an area of engineering that piqued my interest and, with the guidance of a tutor, defining the scope until a project title could be established. The project spanned three months and resulted in my achievement of a First-Class distinction. You can access the written paper for this project **[here](https://1drv.ms/b/s!AtfvxxhKVXNCoiewBtCk1IS_Cjhu?e=FQuFbR)**.
 
 </div>
 
