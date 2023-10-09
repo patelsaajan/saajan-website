@@ -32,4 +32,9 @@ The ultimate goal of the project was to devise a unique solution for a line-foll
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=N6zrWcEZC_Y" frameborder="0" allowfullscreen></iframe></p>
 
+<div style="margin-top:20px">
+
+<div style{align="center"}>
+**[Submitted line following solution](https://www.youtube.com/watch?v=N6zrWcEZC_Y)**</div>
+
 </div>
