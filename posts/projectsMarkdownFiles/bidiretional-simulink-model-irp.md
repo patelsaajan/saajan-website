@@ -18,6 +18,13 @@ As part of my master's degree in engineering, I undertook an individual research
 <img src="/imgs/project/IRP/FullDiagram.png" width="500" title="Full Circuit Diagram"></p>
 </div>
 
+<div style="margin:20px">
+
+<div style{align="center"}>
+**FIG: Full circuit diagram of bi-directional charger model**</div>
+
+</div>
+
 <div style="margin-top:30px; text-align: justify"> ### Abstract
 
 Fossil fuels are currently being phased out by many sectors to reduce greenhouse gas emissions to help preserve the current global climate. The energy sector could reduce its emissions by switching to renewable clean energy sources, while the transport sector could reduce emissions through the transition to battery electric vehicles (BEVs) technology. By acting as energy stores when idle, BEVs can aid the adoption of renewable clean energy sources and help reduce the cost of the energy sector's new infrastructure. Furthermore, owners of the BEVs could be financially compensated for their participation. The BEV would be connected to the grid through a bi-directional charger that could send or receive power. Due to current manufacturer trends, this report looked at the design and implementation of a bi-directional charger for an 800V BEV architecture. A charger model and its controllers were built in Simulink with the preliminary simulation results looking promising and offered a control systems to implement into a hardware testing.
@@ -50,14 +57,32 @@ controllers.
 <p style{align="center"}>
 <img src="/imgs/project/IRP/SimulinkModel.png" width="700" title="Full Simulink Model"></p>
 
+<div style{align="center"}>
+**FIG: Final Simulink model inclduing full circuit and controllers**</div>
+
+</div>
+
 <p style="margin: 20px">
 This project documented the design process of a bi-directional charger that can either work on a 400V or 800V BEV architecture. Two models of the charger were created in Simulink to test the closed-loop control systems, one mode for the G2V and the other for V2G. The buck, boost and inverter controllers worked as intended; however, further work is still needed on the rectifier control system, due to the slightly irregular output. It can be concluded that the controllers for each operation mode work, and therefore the charger model is functional. This technology will become increasingly important in the next few years as we move away from fossil fuels and aim to reduce our GHG emissions. It is important that the foundations for a more sustainable tomorrow are placed as early as possible, as infrastructure takes time to adjust.
 
 <div style="margin: 50px">
 <p style{align="center"}>
 <img src="/imgs/project/IRP/Gridg2v.jpg" width="500" title="Power absorbtion mode"></p>
+
+<div style="margin:20px">
+
+<div style{align="center"}>
+**FIG: G2V Output voltage-current waveforms**</div>
+
+</div>
+
 <p style{align="center"}>
 <img src="/imgs/project/IRP/v2Grid.jpg" width="500" title="Power injection mode">
 </p>
-</div>
+
+<div style="margin:20px">
+
+<div style{align="center"}>
+**FIG: V2G output voltage-current waveforms**</div>
+
 </div>
