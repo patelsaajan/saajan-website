@@ -15,7 +15,7 @@ The project was part of an optional module during my master's year. It involved 
 
 The ultimate goal of the project was to devise a unique solution for a line-following algorithm. Specifically, this meant that the algorithm should not rely on hard-coded directional inputs, ensuring that the 3pi+ could effectively tackle any problem presented to it. To acheive full marks the alorthim should:
 
-<div style="padding: 40px"">
+<div style="padding: 40px">
 
 1. Detect the line and direction of travel
 2. Complete 30 degree turns
