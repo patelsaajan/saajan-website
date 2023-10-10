@@ -30,7 +30,11 @@ The ultimate goal of the project was to devise a unique solution for a line-foll
 <div style="margin-top:40px">
  <p style{align="center"}>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=N6zrWcEZC_Y" frameborder="0" allowfullscreen></iframe></p>
+<a href="https://www.youtube.com/watch?v=N6zrWcEZC_Y&t=7s">
+  <img width="560" src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DN6zrWcEZC_Y%26t%3D7s" alt="Solarbot test run" title="Solarbot test run"/>
+</a>
+</p>
+</div>
 
 <div style="margin-top:20px">
 
