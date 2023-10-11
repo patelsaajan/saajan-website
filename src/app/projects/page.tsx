@@ -6,8 +6,11 @@ import getPostMetadata from "@/components/getPostMetadata";
 const postMetadata = getPostMetadata("posts/projectsMarkdownFiles");
 
 export default function projects() {
-  const postPostMetadata = postMetadata;
-  const postPreviews = postPostMetadata.map((post) => (
+  const postMetadataObject = postMetadata;
+  postMetadataObject.sort((objA, objB) => {
+    return objA.order - objB.order;
+  });
+  const postPreviews = postMetadataObject.map((post) => (
     <BriefProjectCards key={post.slug} {...post} projectURL={post.slug} />
   ));
   return (

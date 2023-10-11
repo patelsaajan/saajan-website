@@ -17,6 +17,7 @@ const getPostMetadata = (folderPath: string): PostMetadata[] => {
       active: matterResult.data.active,
       tags: matterResult.data.tags,
       imageSrc: matterResult.data.imageSrc,
+      order: matterResult.data.order,
       slug: fileName.replace(".md", ""),
     };
   });

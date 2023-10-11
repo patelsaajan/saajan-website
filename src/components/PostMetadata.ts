@@ -6,4 +6,5 @@ export interface PostMetadata {
   slug: string;
   desc: string;
   tags: string[];
+  order: number;
 }
