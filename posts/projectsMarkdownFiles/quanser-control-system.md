@@ -6,6 +6,7 @@ desc: "This project focuses on designing and implementing various combinations o
 imageSrc: "/imgs/project/3dof.jpeg"
 active: false
 featured: false
+order: 6
 ---
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA; padding: 40px"> ### Project Background

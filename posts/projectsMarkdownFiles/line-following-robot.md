@@ -7,6 +7,7 @@ imageSrc: "/imgs/project/3piRobot.jpeg"
 active: false
 projectURL: "linefollowingrobot"
 featured: true
+order: 3
 ---
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA; padding: 40px"> ### Project Background

@@ -6,6 +6,7 @@
   imageSrc: "/imgs/project/typescript.png"
   active: true
   featured: false
+  order: 2
 ---
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA; padding: 40px"> ### Project Background

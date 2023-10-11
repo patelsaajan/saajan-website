@@ -6,6 +6,7 @@ desc: "My individual research project for my master's degree involved designing 
 imageSrc: "/imgs/project/SimulinkModel.png"
 active: false
 featured: true
+order: 4
 ---
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA; padding: 40px"> ### Project Background

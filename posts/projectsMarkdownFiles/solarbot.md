@@ -6,6 +6,7 @@ desc: "During my master's year group project, we were assigned the task of const
 imageSrc: "/imgs/project/Sally.jpeg"
 active: false
 featured: true
+order: 1
 ---
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA; padding: 40px"> ### Project Background

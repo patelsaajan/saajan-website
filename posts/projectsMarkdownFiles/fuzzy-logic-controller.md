@@ -6,6 +6,7 @@ desc: "This project studies the potential improvements fuzzy logic could make to
 imageSrc: "/imgs/project/kpSurface.png"
 active: false
 featured: false
+order: 5
 ---
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA; padding: 40px"> ### Project Background
