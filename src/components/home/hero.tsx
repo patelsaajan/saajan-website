@@ -50,7 +50,7 @@ const HomeHero = () => {
           </Box>
 
           <Button
-            href="https://1drv.ms/b/s!AtfvxxhKVXNCoii9x-V9mncj65jH?e=Qgbexq"
+            href="https://1drv.ms/b/s!AtfvxxhKVXNCoja_Kq5SYF-rB3td?e=lJCPzl"
             sx={{
               backgroundColor: "primary.main",
               color: "#FFFF",
@@ -70,8 +70,6 @@ const HomeHero = () => {
           >
             View CV
           </Button>
-
-          <Typography mt={"20px"}>CV is currently outdated :/</Typography>
         </Box>
 
         <Image
