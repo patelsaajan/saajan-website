@@ -64,6 +64,15 @@ const page = ({ params }: pagePromps) => {
             </Typography>
           </Box>
         </Box>
+        <Box
+          sx={{
+            display: "flex column",
+            border: "1px solid red",
+            marginTop: "30px",
+          }}
+        >
+          <Typography variant="h6">Method</Typography>
+        </Box>
       </Box>
     </Container>
   );
