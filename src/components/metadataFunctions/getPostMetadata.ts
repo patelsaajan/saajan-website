@@ -1,4 +1,4 @@
-import { PostMetadata } from "@/components/PostMetadata";
+import { PostMetadata } from "@/components/metadataFunctions/postMetadataInterface";
 import matter from "gray-matter";
 import fs from "fs";
 
