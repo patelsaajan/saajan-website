@@ -14,7 +14,7 @@ type cardPrompts = {
 const RecipeCard = ({ name, imageString, desc, recipeLink }: cardPrompts) => {
   const theme = useTheme();
   return (
-    <Link href={recipeLink}>
+    <Link href={`/cookbook/${recipeLink}`}>
       <Box
         sx={{
           display: "flex column",
