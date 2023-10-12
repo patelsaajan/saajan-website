@@ -1,7 +1,7 @@
 export interface RecipeMetadata {
-  title: string;
+  name: string;
   date: string;
-  imageSrc: string;
+  imageString: string;
   slug: string;
   desc: string;
 }

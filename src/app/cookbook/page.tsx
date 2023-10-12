@@ -7,6 +7,15 @@ import RecipeCard from "@/components/Cookbook/recipeCard";
 const recipeMetadata = getRecipeMetadata();
 
 export default function blog() {
+  const recipePreview = recipeMetadata.map((recipe) => (
+    <RecipeCard
+      key={recipe.slug}
+      name={recipe.name}
+      desc={recipe.desc}
+      imageString={recipe.imageString}
+      recipeLink={recipe.slug}
+    />
+  ));
   return (
     <Container maxWidth="lg" sx={{ mt: "40px" }}>
       <Box
@@ -26,13 +35,7 @@ export default function blog() {
             justifyContent: "space-evenly",
           }}
         >
-          {foodData.map((recipe) => (
-            <RecipeCard
-              name={recipe.primaryDish}
-              imageString={recipe.imageSrc}
-              desc={recipe.desc}
-            />
-          ))}
+          {recipePreview}
         </Box>
       </Box>
     </Container>

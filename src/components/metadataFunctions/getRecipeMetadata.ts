@@ -1,4 +1,3 @@
-import { PostMetadata } from "@/components/metadataFunctions/postMetadataInterface";
 import matter from "gray-matter";
 import fs from "fs";
 import { RecipeMetadata } from "./recipeMetadataInterfance";
@@ -12,10 +11,10 @@ const getRecipeMetadata = (): RecipeMetadata[] => {
     const fileContents = fs.readFileSync(`${folder}/${fileName}`, "utf8");
     const matterResult = matter(fileContents);
     return {
-      title: matterResult.data.title,
+      name: matterResult.data.name,
       date: matterResult.data.date,
       desc: matterResult.data.desc,
-      imageSrc: matterResult.data.imageSrc,
+      imageString: matterResult.data.imageString,
       slug: fileName.replace(".md", ""),
     };
   });
