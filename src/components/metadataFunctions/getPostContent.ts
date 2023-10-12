@@ -1,7 +1,6 @@
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-import Markdown from "markdown-to-jsx";
 import getPostMetadata from "@/components/metadataFunctions/getPostMetadata";
 
 const getPostContent = (slug: string) => {

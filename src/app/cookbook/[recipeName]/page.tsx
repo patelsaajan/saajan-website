@@ -1,8 +1,6 @@
-"use client";
 import getRecipeContent from "@/components/metadataFunctions/getRecipeContent";
 import { Box, Container, Typography, useTheme } from "@mui/material";
 import Markdown from "markdown-to-jsx";
-import Image from "next/image";
 import React from "react";
 
 interface pagePromps {
@@ -11,8 +9,7 @@ interface pagePromps {
 
 const page = ({ params }: pagePromps) => {
   const slug = params.recipeName;
-  // const recipe = getRecipeContent(slug);
-  const theme = useTheme();
+  const recipe = getRecipeContent(slug);
   return (
     <Container maxWidth="lg">
       <Box
@@ -22,8 +19,8 @@ const page = ({ params }: pagePromps) => {
           paddingTop: "50px",
         }}
       >
-        {/* <Typography variant="h3">{recipe.data.name}</Typography> */}
-        {/* <Markdown>{recipe.content}</Markdown> */}
+        <Typography variant="h3">{recipe.data.name}</Typography>
+        <Markdown>{recipe.content}</Markdown>
       </Box>
     </Container>
   );
