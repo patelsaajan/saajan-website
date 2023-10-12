@@ -1,7 +1,7 @@
 import { Container, Typography } from "@mui/material";
 import React from "react";
 import Markdown from "markdown-to-jsx";
-import getPostContent from "@/components/metadataFunctions/gotPostContent";
+import getPostContent from "@/components/metadataFunctions/getPostContent";
 
 interface pagePromps {
   params: { projectName: string };

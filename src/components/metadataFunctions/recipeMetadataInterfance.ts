@@ -4,4 +4,5 @@ export interface RecipeMetadata {
   imageString: string;
   slug: string;
   desc: string;
+  ingredients: string[];
 }

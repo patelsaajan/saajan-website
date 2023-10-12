@@ -1,6 +1,7 @@
 import getRecipeContent from "@/components/metadataFunctions/getRecipeContent";
 import { Box, Container, Typography, useTheme } from "@mui/material";
 import Markdown from "markdown-to-jsx";
+import Image from "next/image";
 import React from "react";
 
 interface pagePromps {
@@ -20,6 +21,32 @@ const page = ({ params }: pagePromps) => {
         }}
       >
         <Typography variant="h3">{recipe.data.name}</Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "space-around",
+            marginY: "30px",
+          }}
+        >
+          <Image
+            src={"/imgs/food/foodimage1.jpeg"}
+            width={300}
+            height={300}
+            alt="picture of food"
+            style={{ borderRadius: "16px" }}
+          />
+          <Box
+            sx={{
+              display: "flex column",
+              border: "1px solid red",
+              paddingY: "auto",
+            }}
+          >
+            {recipe.data.ingredients.map((item: string) => (
+              <Typography>{item}</Typography>
+            ))}
+          </Box>
+        </Box>
         <Markdown>{recipe.content}</Markdown>
       </Box>
     </Container>

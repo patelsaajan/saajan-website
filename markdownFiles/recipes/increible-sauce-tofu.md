@@ -3,6 +3,7 @@
     imageString: "/imgs/food/foodImage1.jpeg"
     desc: " This is where a short description of the food will be, what is included in it and any other things that i think will be useful about the recipe"
     date: 12 Oct 2023
+    ingredients: ["400g firm tofu", "light soya sauce", "1 lime/lemon", "bulb of garlic", "peanut butter", "vegetable oil"]
 ---
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA; padding: 40px"> ### Project Background
