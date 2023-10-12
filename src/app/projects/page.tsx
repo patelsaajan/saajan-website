@@ -3,7 +3,7 @@ import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import getPostMetadata from "@/components/metadataFunctions/getPostMetadata";
 
-const postMetadata = getPostMetadata("posts/projectsMarkdownFiles");
+const postMetadata = getPostMetadata("markdownFiles/projects");
 
 export default function projects() {
   const postMetadataObject = postMetadata;

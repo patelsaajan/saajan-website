@@ -4,18 +4,12 @@ import Image from "next/image";
 import React from "react";
 
 type cardPrompts = {
-  primaryDish: string;
-  secondaryDish: string;
-  foodIamge: string;
+  name: string;
+  imageString: string;
   desc: string;
 };
 
-const BriefCard = ({
-  primaryDish,
-  secondaryDish,
-  foodIamge,
-  desc,
-}: cardPrompts) => {
+const RecipeCard = ({ name, imageString, desc }: cardPrompts) => {
   const theme = useTheme();
   return (
     <Box
@@ -36,17 +30,14 @@ const BriefCard = ({
       }}
     >
       <Image
-        src={foodIamge}
+        src={imageString}
         width={200}
         height={200}
         alt="test image of food"
         style={{ borderRadius: "16px" }}
       />
       <Typography variant="h5" fontWeight={700}>
-        {primaryDish}
-      </Typography>
-      <Typography variant="body1" fontWeight={600}>
-        {secondaryDish}
+        {name}
       </Typography>
       <Typography variant="body2" sx={{ textAlign: "justify", mt: "10px" }}>
         {desc}
@@ -55,4 +46,4 @@ const BriefCard = ({
   );
 };
 
-export default BriefCard;
+export default RecipeCard;

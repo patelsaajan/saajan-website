@@ -1,9 +1,10 @@
 import { PostMetadata } from "@/components/metadataFunctions/postMetadataInterface";
 import matter from "gray-matter";
 import fs from "fs";
+import { RecipeMetadata } from "./recipeMetadataInterfance";
 
-const getPostMetadata = (folderPath: string): PostMetadata[] => {
-  const folder = folderPath;
+const getRecipeMetadata = (): RecipeMetadata[] => {
+  const folder = "markdownFiles/recipes";
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith("md"));
 
@@ -14,14 +15,11 @@ const getPostMetadata = (folderPath: string): PostMetadata[] => {
       title: matterResult.data.title,
       date: matterResult.data.date,
       desc: matterResult.data.desc,
-      active: matterResult.data.active,
-      tags: matterResult.data.tags,
       imageSrc: matterResult.data.imageSrc,
-      order: matterResult.data.order,
       slug: fileName.replace(".md", ""),
     };
   });
   return posts;
 };
 
-export default getPostMetadata;
+export default getRecipeMetadata;

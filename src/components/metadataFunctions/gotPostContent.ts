@@ -5,7 +5,7 @@ import Markdown from "markdown-to-jsx";
 import getPostMetadata from "@/components/metadataFunctions/getPostMetadata";
 
 const getPostContent = (slug: string) => {
-  const folder = path.join(process.cwd(), "posts/projectsMarkdownFiles/");
+  const folder = path.join(process.cwd(), "markdownFiles/projects/");
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
@@ -14,7 +14,7 @@ const getPostContent = (slug: string) => {
 
 export const generateStaticParams = async () => {
   const posts = getPostMetadata(
-    path.join(process.cwd(), "posts/projectsMarkdownFiles")
+    path.join(process.cwd(), "markdownFiles/projects")
   );
   return posts.map((post) => ({ slug: post.slug }));
 };
