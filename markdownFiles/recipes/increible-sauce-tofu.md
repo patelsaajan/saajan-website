@@ -2,15 +2,9 @@
     name: "Incredible Sauce Tofu"
     imageString: "/imgs/food/foodImage1.jpeg"
     desc: " This is where a short description of the food will be, what is included in it and any other things that i think will be useful about the recipe"
-    date: 12 Oct 2023
-    ingredients: ["400g firm tofu", "light soya sauce", "1 lime/lemon", "bulb of garlic", "peanut butter", "vegetable oil"]
-    story: " This is where the text about the food item will go it will be loaded
-            from the grey matter of the markdown file and then be loaded using
-            code. This is where the text about the food item will go it will be
-            loaded from the grey matter of the markdown file and then be loaded
-            using code. This is where the text about the food item will go it
-            will be loaded from the grey matter of the markdown file and then be
-            loaded using code."
+    date: 06 Feb 2023
+    ingredients: ["400g firm tofu", "light soya sauce", "lime/lemon/rice vinegar", "bulb of garlic", "finger chilis", "peanut butter", "gojuchang", "vegetable oil"]
+    story: ["The inception of this dish dates back to my final year in university when I was immersed in exam preparations. After a long day of studying, I often sought relaxation through cooking something new in the evenings. One night, I entered my kitchen and found myself with limited ingredients, primarily tofu, peanut butter, and gochujang, which sparked my culinary creativity.", "Intrigued by the potential, I quickly looked up a few recipes for inspiration. The dish underwent further refinement when my flatmate, Finn, returned to the flat. Since then, it has remained relatively unchanged. Caroline Kelly has even described it as her favorite among all the dishes I've cooked for her.", "What I particularly appreciate about this dish is its simplicity, combined with the warm and satisfying feeling it imparts. Moreover, the thickness and stickiness of the sauce offer a delightful and enjoyable eating experience, in my opinion.", "The dish remained nameless for an extended period, briefly going by the title of 'Korean Satay Sauce' which didn't quite capture its essence. The name comes from a song by Giggs and Dave and theres not much more to it then that."]
 ---
 
 <div style="margin-top:30px; text-align: justify; background-color: #EDF7FA; padding: 40px"> ### Project Background

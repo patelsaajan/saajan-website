@@ -6,7 +6,7 @@ import React from "react";
 type cardPrompts = {
   imageString: string;
   ingredientsArray: string[];
-  story: string;
+  story: string[];
 };
 
 const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
@@ -41,22 +41,29 @@ const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
           }}
         >
           <Typography variant="h6">Ingredients</Typography>
-          {ingredientsArray.map((item: string) => (
-            <Typography sx={{ marginTop: "20px" }}>{item}</Typography>
+          {ingredientsArray.map((item: string, i: number) => (
+            <Typography key={i} sx={{ marginTop: "20px" }}>
+              {item}
+            </Typography>
           ))}
         </Box>
         <Box
           sx={{
             display: "flex column",
-            // border: "1px solid blue",
             padding: "10px",
             margin: "5px",
           }}
         >
           <Typography variant="h6">Backstory</Typography>
-          <Typography variant="body2" sx={{ textAlign: "justify" }}>
-            {story}
-          </Typography>
+          {story.map((item: string, i: number) => (
+            <Typography
+              key={i}
+              variant="body2"
+              sx={{ marginTop: "10px", textAlign: "justify" }}
+            >
+              {item}
+            </Typography>
+          ))}
         </Box>
       </Box>
     </>

@@ -12,7 +12,6 @@ interface pagePromps {
 const page = ({ params }: pagePromps) => {
   const slug = params.recipeName;
   const recipe = getRecipeContent(slug);
-  // console.log(recipe.data.imageString);
   return (
     <Container maxWidth="lg">
       <Box
@@ -21,10 +20,10 @@ const page = ({ params }: pagePromps) => {
           textAlign: "center",
         }}
       >
-        <Typography variant="h3" sx={{ paddingY: "50px" }}>
+        <Typography variant="h3" sx={{ paddingTop: "50px" }}>
           {recipe.data.name}
         </Typography>
-
+        <Typography sx={{ paddingY: "30px" }}>{recipe.data.date}</Typography>
         <RecipeHero
           imageString={recipe.data.imageString}
           ingredientsArray={recipe.data.ingredients}
