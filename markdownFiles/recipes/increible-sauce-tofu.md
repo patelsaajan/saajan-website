@@ -11,13 +11,13 @@
 
 <div style="margin-top:30px; text-align: justify; border: 1ps solid #fc9292; padding: 30px; ">
 
-<p>Take the tofu out of the packaging, give it a good pat-down with some paper towels or whatever you usually use to dry tofu. Cut it into cubes and stash them away for frying later. If you're up for a little extra crunch, you can toss the tofu in some cornflour and a pinch of salt – it takes a bit more effort, but the added texture can be totally worth it. <span style="margin-top:70px;color: #FF6464 ">*[To knock it up another notch](https://www.youtube.com/watch?v=9JJl3-gxJM4)* </span>, you might even tear the tofu into chunks before giving it a floury coat for some diverse textures.</p>
+<p>Take the tofu out of the packaging, give it a good pat-down with some paper towels or whatever you usually use to dry tofu. Cut it into cubes and stash them away for frying later. If you're up for a little extra crunch, you can toss the tofu in some cornflour and a pinch of salt – it takes a bit more effort, but the added texture can be totally worth it. <span style="margin-top:70px;color: #FF6464 ">*[To knock it up another notch](https://www.youtube.com/watch?v=9JJl3-gxJM4)*</span>, you might even tear the tofu into chunks before giving it a floury coat for some diverse textures.</p>
 
 <p style="margin-top: 30px">Finely slice the garlic and chilis into strips and set them aside in a bowl. Begin shallow frying the tofu until it turns a lovely golden brown. If you've coated it in cornflour, be cautious as they tend to stick together. Aim for a medium-high heat, whever that actually means. Once golden brown place on a plate with a paper towl on to abosrb the excess oil.</p>
 
 <p style="margin-top: 30px">After frying all the tofu, dispose of any excess oil properly, but leave enough in the pan for frying. Heat the oil again and place one heaped spoonful of gochujang on one side of the frying pan to warm it up. On the other side, add the chopped chilis and garlic, ensuring they're in oil as the gochujang will absorb a lot of the oil in the pan.</p>
 <p style="margin-top: 30px">
-After about 30-60 seconds, add two heaped spoonfuls of your preferred peanut butter (generally maintaining a 2:1 ratio of peanut butter to gochujang). Once the garlic starts to crisp, mix everything together with a little mug of water and some soy sauce, allowing it to reduce down (tbh the mug of water is a guess, i just eyeball it so good luck x).
+After about 30-60 seconds, add two heaped spoonfuls of your preferred peanut butter *(generally maintaining a 2:1 ratio of peanut butter to gochujang)*. Once the garlic starts to crisp, mix everything together with a little mug of water and some soy sauce, allowing it to reduce down *(tbh the mug of water is a guess, i just eyeball it so good luck x).*
 </p>
 <p style="margin-top: 30px">
 When the sauce reaches the thickness you desire, add some lime or lemon juice and rice vinegar and let it sit for a minute. Then, toss in your fried tofu, and it's ready to enjoy! 😊 <p>
