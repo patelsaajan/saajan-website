@@ -7,6 +7,11 @@ import RecipeCard from "@/components/Cookbook/recipeCard";
 const recipeMetadata = getRecipeMetadata();
 
 export default function blog() {
+  recipeMetadata.sort((objA, objB) => {
+    let dateA = new Date(objA.date);
+    let dateB = new Date(objB.date);
+    return dateA > dateB ? -1 : 1;
+  });
   const recipePreview = recipeMetadata.map((recipe) => (
     <RecipeCard
       key={recipe.slug}
@@ -14,6 +19,7 @@ export default function blog() {
       desc={recipe.desc}
       imageString={recipe.imageString}
       recipeLink={recipe.slug}
+      date={recipe.date}
     />
   ));
   return (

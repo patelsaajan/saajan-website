@@ -1,8 +1,8 @@
 ---
-    name: "Infused Tofu"
-    imageString: "/imgs/food/foodImage2.jpeg"
+    name: "Cannellini Gucamole"
+    imageString: "/imgs/food/foodImage4.jpeg"
     desc: " This is where a short description of the food will be, what is included in it and any other things that i think will be useful about the recipe"
-    date: 10 May 2023
+    date: 23 July 2023
     ingredients: ["firm tofu [400g]", "light soya sauce", "garlic [1/2 bulb]", "finger chilis [3]", "green onions [2 stems?]", "seasame seeds", "onion [1/2 bulb]", "chili oil (optional)"]
     story: ["During my university years, my flatmate introduced an intriguing habit. He left hard-boiled eggs in a Korean marinade  and allowed them to rest in the fridge for a few days. The aroma of that marinating liquid was truly exceptional. He would often encourage me to try it as well, and although I was generally interested, I frequently found myself unable to find the time or was, to be honest, somewhat lacking in motivation – perhaps a combination of both.", "After a few weeks, I eventually managed to find some time, particularly after my deadlines had passed, to give the dish a try. Surprisingly, the preparation itself didn't take much time at all. However, the marinating period is what tests your patience. Unlike eggs, which are quick to prepare, getting the flavors to properly infuse requires a few days of waiting, but it's certainly worth every moment of anticipation.", "In May 2023, I paid a visit to my mate's house and decided to treat him and his family to this recipe. While we were in the process of preparing the meal, his mum had a brilliant idea. She suggested adding some chili oil she had recently received from Japan, and it turned out to be a fantastic suggestion."]
 ---

@@ -9,9 +9,16 @@ type cardPrompts = {
   imageString: string;
   desc: string;
   recipeLink: string;
+  date: string;
 };
 
-const RecipeCard = ({ name, imageString, desc, recipeLink }: cardPrompts) => {
+const RecipeCard = ({
+  name,
+  imageString,
+  desc,
+  recipeLink,
+  date,
+}: cardPrompts) => {
   const theme = useTheme();
   return (
     <Link href={`/cookbook/${recipeLink}`}>
@@ -22,10 +29,12 @@ const RecipeCard = ({ name, imageString, desc, recipeLink }: cardPrompts) => {
           boxShadow: 1,
           width: "280px",
           justifyContent: "center",
-          p: "10px",
+          px: "10px",
+          paddingTop: "40px",
           m: "20px",
           transition: "200ms all ease-in",
           borderRadius: "16px",
+          minHeight: "350px",
           "&:hover": {
             border: `3px solid ${theme.palette.primary.main}`,
             cursor: "pointer",
@@ -42,9 +51,12 @@ const RecipeCard = ({ name, imageString, desc, recipeLink }: cardPrompts) => {
         <Typography variant="h5" fontWeight={700}>
           {name}
         </Typography>
-        <Typography variant="body2" sx={{ textAlign: "justify", mt: "10px" }}>
-          {desc}
+        <Typography variant="body2" sx={{ mt: "5px" }}>
+          {date}
         </Typography>
+        {/* <Typography variant="body2" sx={{ textAlign: "justify", mt: "5px" }}>
+          {desc}
+        </Typography> */}
       </Box>
     </Link>
   );
