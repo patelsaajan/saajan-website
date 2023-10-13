@@ -1,3 +1,4 @@
+import RecipeHero from "@/components/Cookbook/recipeHero";
 import getRecipeContent from "@/components/metadataFunctions/getRecipeContent";
 import { Box, Container, Typography, useTheme } from "@mui/material";
 import Markdown from "markdown-to-jsx";
@@ -11,42 +12,25 @@ interface pagePromps {
 const page = ({ params }: pagePromps) => {
   const slug = params.recipeName;
   const recipe = getRecipeContent(slug);
+  // console.log(recipe.data.imageString);
   return (
     <Container maxWidth="lg">
       <Box
         sx={{
           display: "flex column",
           textAlign: "center",
-          paddingTop: "50px",
         }}
       >
-        <Typography variant="h3">{recipe.data.name}</Typography>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-around",
-            marginY: "30px",
-          }}
-        >
-          <Image
-            src={"/imgs/food/foodimage1.jpeg"}
-            width={300}
-            height={300}
-            alt="picture of food"
-            style={{ borderRadius: "16px" }}
-          />
-          <Box
-            sx={{
-              display: "flex column",
-              border: "1px solid red",
-              paddingY: "auto",
-            }}
-          >
-            {recipe.data.ingredients.map((item: string) => (
-              <Typography>{item}</Typography>
-            ))}
-          </Box>
-        </Box>
+        <Typography variant="h3" sx={{ paddingY: "50px" }}>
+          {recipe.data.name}
+        </Typography>
+
+        <RecipeHero
+          imageString={recipe.data.imageString}
+          ingredientsArray={recipe.data.ingredients}
+          story={recipe.data.story}
+        />
+
         <Markdown>{recipe.content}</Markdown>
       </Box>
     </Container>
@@ -55,53 +39,32 @@ const page = ({ params }: pagePromps) => {
 
 export default page;
 
-// <Image
-// src={"/imgs/food/foodImage1.jpeg"}
-// width={300}
-// height={300}
-// alt="test image of food"
-// style={{ borderRadius: "16%", marginTop: "30px" }}
-// />
+// <Box
+//           sx={{
+//             display: "flex",
+//             justifyContent: "space-around",
+//             marginY: "30px",
+//           }}
+//         >
+//           <Image
+//             src={"/imgs/food/foodimage1.jpeg"}
+//             width={300}
+//             height={300}
+//             alt="picture of food"
+//             style={{ borderRadius: "16px" }}
+//           />
 
-// <Box sx={{ display: "flex", marginTop: "30px" }}>
-// <Box
-//   sx={{
-//     display: "flex column",
-//     width: "50%",
-//     borderRadius: "16px",
-//     backgroundColor: "primary.main",
-//     color: "white",
-//   }}
-// >
-//   <Typography variant="h6">Ingredients</Typography>
-//   {ingredients.map((item) => (
-//     <Typography>{item}</Typography>
-//   ))}
-// </Box>
-// <Box
-//   sx={{
-//     display: "flex column",
-//     width: "50%",
-//     // border: "1px solid green",
-//   }}
-// >
-//   <Typography variant="h6">Backstory</Typography>
-//   <Typography
-//     variant="body2"
-//     sx={{ textAlign: "justify", padding: "10px" }}
-//   >
-//     This is where a story story about how the recipe was made and any
-//     other additional info id like to add to it. I think itll be a nice
-//     little note to include on the recipe
-//   </Typography>
-// </Box>
-// </Box>
-// <Box
-// sx={{
-//   display: "flex column",
-//   border: "1px solid red",
-//   marginTop: "30px",
-// }}
-// >
-// <Typography variant="h6">Method</Typography>
-// </Box>
+//           <Box sx={{ display: "flex column", width: "45%" }}>
+//             {" "}
+//             <Typography variant="h6">Backstory</Typography>
+//             <Typography variant="body2" sx={{ textAlign: "justify" }}>
+//               This is where the text about the food item will go it will be
+//               loaded from the grey matter of the markdown file and then be
+//               loaded using code. This is where the text about the food item will
+//               go it will be loaded from the grey matter of the markdown file and
+//               then be loaded using code. This is where the text about the food
+//               item will go it will be loaded from the grey matter of the
+//               markdown file and then be loaded using code.
+//             </Typography>
+//           </Box>
+//         </Box>
