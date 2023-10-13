@@ -4,12 +4,12 @@ import fs from "fs";
 import { RecipeMetadata } from "./interfaces/recipeMetadataInterfance";
 
 const getRecipeMetadata = (): RecipeMetadata[] => {
-  const folder = path.join(process.cwd(), "markdownFiles/recipes");
+  const folder = path.join(process.cwd(), "/markdownFiles/recipes/");
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith("md"));
 
   const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`${folder}/${fileName}`, "utf8");
+    const fileContents = fs.readFileSync(`${folder}${fileName}`, "utf8");
     const matterResult = matter(fileContents);
     return {
       name: matterResult.data.name,
