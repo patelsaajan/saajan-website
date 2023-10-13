@@ -1,9 +1,10 @@
 import matter from "gray-matter";
+import path from "path";
 import fs from "fs";
-import { RecipeMetadata } from "./recipeMetadataInterfance";
+import { RecipeMetadata } from "./interfaces/recipeMetadataInterfance";
 
 const getRecipeMetadata = (): RecipeMetadata[] => {
-  const folder = "markdownFiles/recipes";
+  const folder = path.join(process.cwd(), "markdownFiles/recipes");
   const files = fs.readdirSync(folder);
   const markdownPosts = files.filter((file) => file.endsWith("md"));
 
