@@ -15,26 +15,30 @@ const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
   const largeScreen = useMediaQuery(theme.breakpoints.up("md"));
   return (
     <>
-      <Image
-        src={imageString}
-        width={largeScreen ? 450 : 300}
-        height={largeScreen ? 450 : 300}
-        alt="picture of food"
-        style={{ borderRadius: "16px" }}
-      />
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <Image
+          src={imageString}
+          width={largeScreen ? 450 : 300}
+          height={largeScreen ? 450 : 300}
+          alt="picture of food"
+          style={{ borderRadius: "16px" }}
+        />
+      </Box>
       <Box
         sx={{
           display: isMobile ? "flex column" : "flex",
-          justifyContent: "center",
-          marginY: "30px",
+          alignItems: "flex-start",
+          marginY: "60px",
         }}
       >
         <Box
           sx={{
             display: "flex column",
-            minWidth: "40%",
+            minWidth: "200px",
+            // maxWidth: "300px",
             padding: "10px",
-            margin: "5px",
+            marginX: "5px",
+            marginY: "15px",
             backgroundColor: "primary.main",
             borderRadius: "16px",
             color: "white",
@@ -42,7 +46,7 @@ const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
         >
           <Typography variant="h6">Ingredients</Typography>
           {ingredientsArray.map((item: string, i: number) => (
-            <Typography key={i} sx={{ marginTop: "20px" }}>
+            <Typography key={i} sx={{ marginTop: "10px" }}>
               {item}
             </Typography>
           ))}
@@ -51,7 +55,10 @@ const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
           sx={{
             display: "flex column",
             padding: "10px",
-            margin: "5px",
+            marginX: "5px",
+            marginY: "15px",
+            border: "1px solid black",
+            borderRadius: "16px",
           }}
         >
           <Typography variant="h6">Backstory</Typography>
