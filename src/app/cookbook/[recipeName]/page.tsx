@@ -1,5 +1,5 @@
 import RecipeHero from "@/components/Cookbook/recipeHero";
-import getRecipeContent from "@/components/metadataFunctions/getRecipeContent";
+import getMarkdownContent from "@/components/metadataFunctions/getMarkdownContent";
 import getRecipeMetadata from "@/components/metadataFunctions/getRecipeMetadata";
 import { Box, Container, Typography, useTheme } from "@mui/material";
 import Markdown from "markdown-to-jsx";
@@ -16,7 +16,7 @@ export const generateStaticParams = async () => {
 
 const page = ({ params }: pagePromps) => {
   const slug = params.recipeName;
-  const recipe = getRecipeContent(slug);
+  const recipe = getMarkdownContent(slug, "markdownFiles/recipes/");
   return (
     <Container maxWidth="lg">
       <Box

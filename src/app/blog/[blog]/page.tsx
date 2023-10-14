@@ -12,7 +12,7 @@ export const generateStaticParams = async () => {
 
 const page = ({ params }: pagePromps) => {
   const slug = params.projectName;
-  // const post = getPostContent(slug);
+  // const post = getPostContent(slug, "markdownFiles/blog/");
   return <div>page</div>;
 };
 
