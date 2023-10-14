@@ -2,10 +2,19 @@ import { Container, Typography } from "@mui/material";
 import React from "react";
 import Markdown from "markdown-to-jsx";
 import getPostContent from "@/components/metadataFunctions/getPostContent";
+import getPostMetadata from "@/components/metadataFunctions/getPostMetadata";
+import path from "path";
 
 interface pagePromps {
   params: { projectName: string };
 }
+
+export const generateStaticParams = async () => {
+  const posts = getPostMetadata(
+    path.join(process.cwd(), "/markdownFiles/projects/")
+  );
+  return posts.map((post) => ({ slug: post.slug }));
+};
 
 const page = ({ params }: pagePromps) => {
   const slug = params.projectName;

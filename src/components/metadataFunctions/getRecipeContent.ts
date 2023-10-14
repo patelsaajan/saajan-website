@@ -11,9 +11,4 @@ const getRecipeContent = (slug: string) => {
   return matterResult;
 };
 
-export const generateStaticParams = async () => {
-  const recipes = getRecipeMetadata();
-  return recipes.map((recipe) => ({ slug: recipe.slug }));
-};
-
 export default getRecipeContent;
