@@ -1,7 +1,18 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import BlogCards from "./blogCards";
 import blogData from "@/components/data/blog";
+import BlogCards from "@/components/blog/blogCards";
+import matter from "gray-matter";
+import fs from "fs";
+import { BlogMetadata } from "@/components/metadataFunctions/interfaces/blogMetadataInterface";
+import path from "path";
+import getBlogMetadata from "@/components/metadataFunctions/getBlogMetadata";
+
+const blogMetadata = getBlogMetadata();
+
+const postPreviews = blogMetadata.map((post) => (
+  <BlogCards key={post.slug} {...post} />
+));
 
 export default function blog() {
   return (
@@ -11,14 +22,7 @@ export default function blog() {
           Blog
         </Typography>
       </Box>
-      {blogData.map((data) => (
-        <BlogCards
-          title={data.title}
-          date={data.date}
-          tags={data.tags}
-          body={data.body}
-        />
-      ))}
+      {postPreviews}
     </Container>
   );
 }
