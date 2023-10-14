@@ -2,8 +2,11 @@ import BriefProjectCards from "@/components/projects/briefProjectCards";
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import getPostMetadata from "@/components/metadataFunctions/getPostMetadata";
+import { generateStaticParams } from "@/components/metadataFunctions/getPostContent";
 
 const postMetadata = getPostMetadata("markdownFiles/projects/");
+
+generateStaticParams();
 
 export default function projects() {
   const postMetadataObject = postMetadata;
