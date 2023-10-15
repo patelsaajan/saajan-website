@@ -42,15 +42,13 @@ function ResponsiveAppBar() {
       position="static"
       sx={{ backgroundColor: "transparent", boxShadow: "0", mt: "20px" }}
     >
-      <Container maxWidth="lg" sx={{}}>
+      <Container maxWidth="sm">
         <Toolbar disableGutters>
           <Box
             sx={{
               display: "flex",
-              gap: "30px",
-
               width: "100%",
-              justifyContent: "center",
+              justifyContent: "space-evenly",
             }}
           >
             {pages.map((page, i) => (
@@ -60,7 +58,7 @@ function ResponsiveAppBar() {
                 sx={{
                   color: "black",
                   fontSize: "Large",
-                  p: "20px",
+                  // p: "20px",
                   fontWeight: "550",
 
                   transition: "auto 200ms ease-in",
