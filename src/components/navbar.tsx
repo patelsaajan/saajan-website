@@ -11,7 +11,7 @@ const pages = [
   { name: "projects", goTo: "/projects" },
   { name: "blog", goTo: "/blog" },
   { name: "diary", goTo: "/diary" },
-  { name: "cookbook", goTo: "/cookbook" },
+  { name: "recipes", goTo: "/recipes" },
 ];
 
 function ResponsiveAppBar() {
@@ -58,7 +58,7 @@ function ResponsiveAppBar() {
                 sx={{
                   color: "black",
                   fontSize: "Large",
-                  // p: "20px",
+                  paddingRight: "20px",
                   fontWeight: "550",
 
                   transition: "auto 200ms ease-in",

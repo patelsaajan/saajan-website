@@ -1,4 +1,4 @@
-import RecipeHero from "@/components/Cookbook/recipeHero";
+import RecipeHero from "@/components/recipes/recipeHero";
 import getMarkdownContent from "@/components/metadataFunctions/getMarkdownContent";
 import getRecipeMetadata from "@/components/metadataFunctions/getRecipeMetadata";
 import { Box, Container, Typography, useTheme } from "@mui/material";

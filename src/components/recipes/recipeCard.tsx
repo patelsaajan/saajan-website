@@ -21,7 +21,7 @@ const RecipeCard = ({
 }: cardPrompts) => {
   const theme = useTheme();
   return (
-    <Link href={`/cookbook/${recipeLink}`}>
+    <Link href={`/recipes/${recipeLink}`}>
       <Box
         sx={{
           display: "flex column",
