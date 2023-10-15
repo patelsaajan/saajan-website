@@ -8,13 +8,21 @@ type cardPrompts = {
   tags: string;
   body: string;
   blogSlug: string;
+  folder: string;
 };
 
-const BlogCards = ({ title, date, tags, body, blogSlug }: cardPrompts) => {
+const BlogCards = ({
+  title,
+  date,
+  tags,
+  body,
+  blogSlug,
+  folder,
+}: cardPrompts) => {
   const options: { dateStyle: "long" } = { dateStyle: "long" };
   console.log(blogSlug);
   return (
-    <Link href={`/blog/${blogSlug}`}>
+    <Link href={`/${folder}/${blogSlug}`}>
       <Box
         sx={{ display: "flex column", width: "100%", gap: "10px", mb: "40px" }}
       >
