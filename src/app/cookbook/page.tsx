@@ -13,14 +13,7 @@ export default function blog() {
     return dateA > dateB ? -1 : 1;
   });
   const recipePreview = recipeMetadata.map((recipe) => (
-    <RecipeCard
-      key={recipe.slug}
-      name={recipe.name}
-      desc={recipe.desc}
-      imageString={recipe.imageString}
-      recipeLink={recipe.slug}
-      date={recipe.date}
-    />
+    <RecipeCard key={recipe.slug} recipeLink={recipe.slug} {...recipe} />
   ));
   return (
     <Container maxWidth="lg" sx={{ mt: "40px" }}>

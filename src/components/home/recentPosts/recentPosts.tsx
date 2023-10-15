@@ -54,13 +54,7 @@ const RecentPosts = () => {
           }}
         >
           {postDataArray.map((card, i) => (
-            <RecentPostCard
-              key={i}
-              title={card.title}
-              date={card.date}
-              tags={card.tags}
-              body={card.body}
-            />
+            <RecentPostCard key={i} {...card} />
           ))}
         </Box>
       </Container>

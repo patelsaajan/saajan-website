@@ -14,7 +14,7 @@ type cardPrompts = {
   title: string;
   date: string;
   tags: string[];
-  desc: string;
+  body: string;
   imageSrc: string;
   projectURL: string;
 };
@@ -23,7 +23,7 @@ const FeatureWorkCard = ({
   title,
   date,
   tags,
-  desc,
+  body,
   imageSrc,
   projectURL,
 }: cardPrompts) => {
@@ -97,7 +97,7 @@ const FeatureWorkCard = ({
             ))}
           </Box>
           <Typography mt="5px" color="#21243D" sx={{ fontSize: "small" }}>
-            {desc}
+            {body}
           </Typography>
         </Box>
       </Box>
