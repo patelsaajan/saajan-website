@@ -1,12 +1,17 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import BlogCards from "@/components/blog/blogCards";
 import getDiaryMetadata from "@/components/metadataFunctions/getDiaryMetadata";
+import TextOnlyCards from "@/components/textOnlyCards";
 
 const diaryMetadata = getDiaryMetadata();
 
 const postPreviews = diaryMetadata.map((post) => (
-  <BlogCards key={post.slug} {...post} blogSlug={post.slug} folder="diary" />
+  <TextOnlyCards
+    key={post.slug}
+    {...post}
+    blogSlug={post.slug}
+    folder="diary"
+  />
 ));
 
 export default function blog() {

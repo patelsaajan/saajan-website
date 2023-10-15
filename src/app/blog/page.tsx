@@ -1,12 +1,12 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import BlogCards from "@/components/blog/blogCards";
 import getBlogMetadata from "@/components/metadataFunctions/getBlogMetadata";
+import TextOnlyCards from "@/components/textOnlyCards";
 
 const blogMetadata = getBlogMetadata();
 
 const postPreviews = blogMetadata.map((post) => (
-  <BlogCards key={post.slug} {...post} blogSlug={post.slug} folder="blog" />
+  <TextOnlyCards key={post.slug} {...post} blogSlug={post.slug} folder="blog" />
 ));
 
 export default function blog() {
