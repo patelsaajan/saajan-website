@@ -1,17 +1,12 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import blogData from "@/components/data/blog";
 import BlogCards from "@/components/blog/blogCards";
-import matter from "gray-matter";
-import fs from "fs";
-import { BlogMetadata } from "@/components/metadataFunctions/interfaces/blogMetadataInterface";
-import path from "path";
 import getBlogMetadata from "@/components/metadataFunctions/getBlogMetadata";
 
 const blogMetadata = getBlogMetadata();
 
 const postPreviews = blogMetadata.map((post) => (
-  <BlogCards key={post.slug} {...post} />
+  <BlogCards key={post.slug} {...post} blogSlug={post.slug} />
 ));
 
 export default function blog() {

@@ -1,6 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import foodData from "@/components/data/food";
 import getRecipeMetadata from "@/components/metadataFunctions/getRecipeMetadata";
 import RecipeCard from "@/components/Cookbook/recipeCard";
 
