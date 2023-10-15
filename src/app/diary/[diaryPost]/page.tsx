@@ -23,7 +23,7 @@ const page = ({ params }: pagePromps) => {
           sx={{ display: "flex column", textAlign: "justify", marginY: "70px" }}
         >
           <Typography variant="h3">{post.data.title}</Typography>
-          <Typography variant="body2" sx={{ marginTop: "15px" }}>
+          <Typography variant="body1" sx={{ marginTop: "10px" }}>
             {post.data.date}
           </Typography>
           <Markdown>{post.content}</Markdown>

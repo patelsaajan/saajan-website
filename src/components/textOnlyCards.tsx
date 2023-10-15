@@ -1,4 +1,5 @@
-import { Box, Divider, Typography } from "@mui/material";
+"use client";
+import { Box, Divider, Typography, useTheme } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 
@@ -20,7 +21,8 @@ const TextOnlyCards = ({
   folder,
 }: cardPrompts) => {
   const options: { dateStyle: "long" } = { dateStyle: "long" };
-  console.log(blogSlug);
+  const theme = useTheme();
+  let hover = false;
   return (
     <>
       <Link href={`/${folder}/${blogSlug}`}>
@@ -32,7 +34,15 @@ const TextOnlyCards = ({
             mb: "40px",
           }}
         >
-          <Typography variant="h5" fontWeight={"550"}>
+          <Typography
+            variant="h5"
+            fontWeight={"550"}
+            sx={{
+              "&:hover": {
+                color: `${theme.palette.primary.main}`,
+              },
+            }}
+          >
             {title}
           </Typography>
           <Box display={"flex"} gap={"10px"}>
@@ -41,7 +51,7 @@ const TextOnlyCards = ({
             </Typography>{" "}
             | <Typography sx={{ color: "#8695A4" }}>{tags}</Typography>
           </Box>
-          <Typography>{body}</Typography>
+          <Typography sx={{ textAlign: "justify" }}>{body}</Typography>
           <Divider sx={{ mt: "20px", Size: "10px" }} />
         </Box>
       </Link>

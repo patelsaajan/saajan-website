@@ -19,7 +19,7 @@ export default function blog() {
     <Container maxWidth="sm" sx={{ mt: "40px" }}>
       <Box sx={{ display: "flex column" }}>
         <Typography variant={"h4"} fontWeight={"800"} mb="30px">
-          Diary of an indian kid
+          Diary of an "indian" kid
         </Typography>
       </Box>
       {postPreviews}
