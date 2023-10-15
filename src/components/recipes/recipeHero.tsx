@@ -21,7 +21,7 @@ const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
           width={largeScreen ? 450 : 300}
           height={largeScreen ? 450 : 300}
           alt="picture of food"
-          style={{ borderRadius: "16px" }}
+          style={{ borderRadius: "16px", border: "5px solid black" }}
         />
       </Box>
       <Box
@@ -35,12 +35,12 @@ const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
           sx={{
             display: "flex column",
             minWidth: "200px",
-            // maxWidth: "300px",
             padding: "10px",
             marginX: "5px",
             marginY: "15px",
-            backgroundColor: "primary.main",
             borderRadius: "16px",
+            border: `3px solid ${theme.palette.primary.dark}`,
+            backgroundColor: "primary.main",
             color: "white",
           }}
         >
