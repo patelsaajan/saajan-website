@@ -5,6 +5,12 @@ import TextOnlyCards from "@/components/textOnlyCards";
 
 const diaryMetadata = getDiaryMetadata();
 
+diaryMetadata.sort((objA, objB) => {
+  let dateA = new Date(objA.date);
+  let dateB = new Date(objB.date);
+  return dateA > dateB ? -1 : 1;
+});
+
 const postPreviews = diaryMetadata.map((post) => (
   <TextOnlyCards
     key={post.slug}
