@@ -1,6 +1,6 @@
 ---
     name: "Spicy Beans"
-    imageString: "/imgs/food/foodImage3.jpeg"
+    imageString: "/imgs/food/spicy-beans.jpeg"
     date: 14 July 2023
     ingredients: ["any beans [1 tin]", "garlic [1/2 bulb]", "onion [1]", "chillis [2-3]", "tinned tomatos [2 tins]", "any spices you have", "bread of bread", "Olive Oil"]
     story: ["If you ever find yourself growing tired of the same old baked beans and are craving something a bit more exciting, then this recipe is just the thing for you. I initially started cooking this with my flatmate as a way to add some pizzazz to plain baked beans, but you can easily swap out those sugary canned beans for tinned tomatoes and a bean variety of your choice." , "The dish featured in the display image was prepared on my last day during a visit to my friend Tatsuki's house in Pembrokeshire. Tatsuki, his dad, and I savored this meal while sitting in the new front garden with adorable baby chicks scampering around us and the morning summer rays beating down on us. It was an absolutely stunning setting to enjoy this dish in."]
