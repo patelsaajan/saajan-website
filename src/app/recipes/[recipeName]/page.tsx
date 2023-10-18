@@ -33,6 +33,7 @@ const page = ({ params }: pagePromps) => {
           imageString={recipe.data.imageString}
           ingredientsArray={recipe.data.ingredients}
           story={recipe.data.story}
+          optioanlArray={recipe.data.optional}
         />
 
         <Markdown>{recipe.content}</Markdown>

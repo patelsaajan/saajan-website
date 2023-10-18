@@ -19,6 +19,7 @@ const getRecipeMetadata = (): RecipeMetadata[] => {
       slug: fileName.replace(".md", ""),
       ingredients: matterResult.data.ingredients,
       story: matterResult.data.story,
+      optional: matterResult.data.optional,
     };
   });
   return posts;

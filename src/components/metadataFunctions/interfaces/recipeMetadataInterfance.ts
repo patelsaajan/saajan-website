@@ -5,5 +5,6 @@ export interface RecipeMetadata {
   slug: string;
   desc: string;
   ingredients: string[];
+  optional: string[];
   story: string[];
 }

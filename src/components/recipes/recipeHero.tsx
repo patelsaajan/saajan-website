@@ -7,9 +7,15 @@ type cardPrompts = {
   imageString: string;
   ingredientsArray: string[];
   story: string[];
+  optioanlArray: string[];
 };
 
-const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
+const RecipeHero = ({
+  imageString,
+  ingredientsArray,
+  story,
+  optioanlArray,
+}: cardPrompts) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const largeScreen = useMediaQuery(theme.breakpoints.up("md"));
@@ -46,10 +52,28 @@ const RecipeHero = ({ imageString, ingredientsArray, story }: cardPrompts) => {
         >
           <Typography variant="h6">Ingredients</Typography>
           {ingredientsArray.map((item: string, i: number) => (
-            <Typography key={i} sx={{ marginTop: "10px" }}>
+            <Typography key={i} variant={"body2"} sx={{ marginTop: "10px" }}>
               {item}
             </Typography>
           ))}
+          {optioanlArray.length === 0 ? (
+            <></>
+          ) : (
+            <>
+              <Typography variant="body1" sx={{ marginTop: "10px" }}>
+                Optional
+              </Typography>
+              {optioanlArray.map((item: string, i: number) => (
+                <Typography
+                  key={i}
+                  variant={"body2"}
+                  sx={{ marginTop: "10px" }}
+                >
+                  {item}
+                </Typography>
+              ))}
+            </>
+          )}
         </Box>
         <Box
           sx={{
