@@ -1,13 +1,10 @@
 ---
-title: "The Wisdom in Fumbling: When Wrong Choices Fuel Personal Growth"
-date: "16 Oct 2023"
+title: "The Ripple Effect: How One Wrong Choice Can Change Your Life"
+# "The Hidden Blessings of Wrong Choices: Discovering Silver Linings"
+date: "18 Oct 2023"
 tags: "Life"
 body: "In my relatively short existence on this planet, I've made a few decisions that turned out to be mistakes, but these missteps have significantly shaped my life and who I am as a person. It's often the choices that go wrong that fuel the most growth, and it has shown me that sometimes the wrong choice can be the right one in the end."
 ---
-
-<div style="text-align:center">
-<p style="margin-top: 50px; font-weight: 1000; font-size:50pt">Coming Soon</p>
-</div>
 
 <p style="margin-top: 30px">I must admit that, like anyone else, I've made my fair share of less-than-wise decisions and mistakes. While in real life, I might downplay this fact, the reality is that we all make missteps from time to time. Fortunately, some of these errors have surprisingly turned out in my favor, or I've managed to extract valuable lessons from them for the future. I've come to terms with the idea that regardless of the choices one makes in a situation, be it action or inaction, embracing a decision and moving forward without regret ultimately shapes it into the right choice for you. In this entry, I intend to explore a few of these experiences.</p>
 
@@ -27,7 +24,13 @@ body: "In my relatively short existence on this planet, I've made a few decision
 <p style="margin-top: 50px; font-weight: 1000; font-size:25pt">Underprepared</p>
 </div>
 
-<p style="margin-top: 30px"></p>
+<p style="margin-top: 30px">The year is 2020, and I've just returned to university since the COVID outbreak. The university has adopted an online approach to adhere to government guidelines. This means that there is no need to physically attend the university campus, and all work can be completed remotely from the comfort of your own home. For some students, especially those who prefer digital materials, this new setup was a dream come true and more in line with their preferences.</p>
+
+<p style="margin-top: 30px">As the year progressed, I found myself falling behind in my examined modules. Instead, I focused solely on my coursework modules, which seemed more demanding at the time due to their sooner deadlines. Once I had submitted my last piece of coursework, I shifted my focus to revising for my three exams, which were worth half of my year's grade. I had given myself just over three weeks for this, but it quickly became apparent that it wasn't enough time, and I entered the most stressful period of my life to date. A little-known fact about me is that when I am stressed, I lose my appetite. Considering how naturally big my appetite is, it's quite a sight to see. During that particularly stressful period, I lost roughly 5 kilograms due to my stress.</p>
+
+<p style="margin-top: 30px">It felt like I was stuck in a loop: wake up, work, sleep, and repeat. Fortunately, I managed to perform well in my exams, but I realised the mistake I had made. I promised myself that I would never put myself in that situation again.</p>
+
+<p style="margin-top: 30px">For the rest of my time at the university, I carried that lesson with me and made sure I was well-prepared for all of my work. This change in my approach was reflected in my exam results, where I mostly scored high firsts. It culminated in my final exam of my degree, where I achieved the top of my class. However, I could only achieve all of this by learning what it felt like to be so underprepared for something, despising that feeling, and taking all the necessary steps to ensure I would never be put in that situation again.</p>
 
 <p style="margin-top: 30px"></p>
 
