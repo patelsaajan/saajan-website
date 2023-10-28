@@ -67,7 +67,9 @@ const CompactBar = ({ pages }: prompts) => {
         {pages.map((page) => (
           <MenuItem key={page.goTo} onClick={handleCloseNavMenu}>
             <Link href={page.goTo}>
-              <Typography textAlign="center">{page.name}</Typography>
+              <Typography textAlign="center">
+                {page.name.toUpperCase()}
+              </Typography>
             </Link>
           </MenuItem>
         ))}

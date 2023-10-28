@@ -24,7 +24,7 @@ export default function blog() {
         }}
       >
         <Typography variant={"h4"} fontWeight={"800"} mb="30px">
-          Cookbook
+          Recipes
         </Typography>
         <Box
           sx={{
