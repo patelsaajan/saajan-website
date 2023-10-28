@@ -1,5 +1,5 @@
 "use client";
-import ResponsiveAppBar from "@/components/navbar";
+import ResponsiveAppBar from "@/components/appbar/navbar";
 import MUIThemeProvider from "../../theme/themeProvider";
 import "./globals.css";
 import { Inter } from "next/font/google";
