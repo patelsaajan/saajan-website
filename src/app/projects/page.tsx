@@ -16,8 +16,8 @@ export default function projects() {
   return (
     <>
       <Container maxWidth="lg" sx={{ mt: "40px" }}>
-        <Box sx={{ display: "flex column" }}>
-          <Typography sx={{}} variant={"h4"} fontWeight={"800"} mb="30px">
+        <Box sx={{ display: "flex column", textAlign: "center" }}>
+          <Typography sx={{}} variant={"h4"} fontWeight={"800"} mb="40px">
             Projects
           </Typography>
           {postPreviews}

@@ -23,8 +23,8 @@ const postPreviews = diaryMetadata.map((post) => (
 export default function blog() {
   return (
     <Container maxWidth="sm" sx={{ mt: "40px" }}>
-      <Box sx={{ display: "flex column" }}>
-        <Typography variant={"h4"} fontWeight={"800"} mb="30px">
+      <Box sx={{ display: "flex column", textAlign: "center" }}>
+        <Typography variant={"h4"} fontWeight={"800"} mb="40px">
           Diary of an "indian" kid
         </Typography>
       </Box>
