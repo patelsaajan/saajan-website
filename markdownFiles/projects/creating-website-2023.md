@@ -4,7 +4,7 @@
   tags: ["Typescript", "React"]
   desc: "Web development and application building have intrigued me for a while. Since completing university, I've had the opportunity to delve into this passion while traveling throughout Southeast Asia. This website is constructed using TypeScript, React, and the MUI library, all with a foundation of novice knowledge."
   imageSrc: "/imgs/project/typescript.png"
-  active: true
+  active: false
   featured: false
   order: 2
 ---
