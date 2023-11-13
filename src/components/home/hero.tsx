@@ -73,10 +73,10 @@ const HomeHero = () => {
         </Box>
 
         <Image
-          alt={"photo of myself during my graduation"}
+          alt={"photo of myself"}
           width={400}
           height={400}
-          src={"/imgs/heroPhoto.jpg"}
+          src={"/imgs/heroPhoto.jpeg"}
           style={{
             borderRadius: "50%",
             border: `5px solid ${theme.palette.primary.main}`,
