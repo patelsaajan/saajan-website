@@ -8,7 +8,7 @@ const pagesArray = [
   { name: "home", goTo: "/" },
   { name: "projects", goTo: "/projects" },
   { name: "blog", goTo: "/blog" },
-  { name: "diary", goTo: "/diary" },
+  // { name: "diary", goTo: "/diary" },
   { name: "recipes", goTo: "/recipes" },
 ];
 
