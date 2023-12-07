@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import getRecipeMetadata from "@/components/metadataFunctions/getRecipeMetadata";
-import RecipeCard from "@/components/recipes/recipeCard";
+import getRecipeMetadata from "../../../components/metadataFunctions/getRecipeMetadata";
+import RecipeCard from "../../../components/recipes/recipeCard";
 
 const recipeMetadata = getRecipeMetadata();
 

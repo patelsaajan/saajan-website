@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import getBlogMetadata from "@/components/metadataFunctions/getBlogMetadata";
-import TextOnlyCards from "@/components/textOnlyCards";
+import getBlogMetadata from "../../../components/metadataFunctions/getBlogMetadata";
+import TextOnlyCards from "../../../components/textOnlyCards";
 
 const blogMetadata = getBlogMetadata();
 

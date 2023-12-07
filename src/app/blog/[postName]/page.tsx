@@ -1,5 +1,5 @@
-import getBlogMetadata from "@/components/metadataFunctions/getBlogMetadata";
-import getMarkdownContent from "@/components/metadataFunctions/getMarkdownContent";
+import getBlogMetadata from "../../../../components/metadataFunctions/getBlogMetadata";
+import getMarkdownContent from "../../../../components/metadataFunctions/getMarkdownContent";
 import { Box, Container, Typography } from "@mui/material";
 import Markdown from "markdown-to-jsx";
 import Image from "next/image";

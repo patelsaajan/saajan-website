@@ -1,7 +1,7 @@
 import { Box, Container, Divider, Typography } from "@mui/material";
 import React from "react";
 import FeatureWorkCard from "./featureWorkCard";
-import featuredWorkData from "@/components/data/featuredWork";
+import featuredWorkData from "../../data/featuredWork";
 
 const FeaturedWork = () => {
   return (

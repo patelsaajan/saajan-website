@@ -2,7 +2,7 @@
 import { Box, Button, Container, Typography, useTheme } from "@mui/material";
 import React from "react";
 import RecentPostCard from "./recentPostCard";
-import postDataArray from "@/components/data/posts";
+import postDataArray from "../../data/posts";
 import Link from "next/link";
 
 const RecentPosts = () => {

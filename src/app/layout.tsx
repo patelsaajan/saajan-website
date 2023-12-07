@@ -1,9 +1,9 @@
 "use client";
-import ResponsiveAppBar from "@/components/appbar/navbar";
+import ResponsiveAppBar from "../../components/appbar/navbar";
 import MUIThemeProvider from "../../theme/themeProvider";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { Footer } from "@/components/home";
+import { Footer } from "../../components/home";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import getDiaryMetadata from "@/components/metadataFunctions/getDiaryMetadata";
-import TextOnlyCards from "@/components/textOnlyCards";
+import getDiaryMetadata from "../../../components/metadataFunctions/getDiaryMetadata";
+import TextOnlyCards from "../../../components/textOnlyCards";
 
 const diaryMetadata = getDiaryMetadata();
 
