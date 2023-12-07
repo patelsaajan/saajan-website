@@ -1,7 +1,7 @@
-import BriefProjectCards from "../../../components/projects/briefProjectCards";
+import BriefProjectCards from "../../components/projects/briefProjectCards";
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
-import getPostMetadata from "../../../components/metadataFunctions/getPostMetadata";
+import getPostMetadata from "../../components/metadataFunctions/getPostMetadata";
 
 const postMetadata = getPostMetadata("markdownFiles/projects/");
 

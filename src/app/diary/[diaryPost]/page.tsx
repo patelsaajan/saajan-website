@@ -1,5 +1,5 @@
-import getDiaryMetadata from "../../../../components/metadataFunctions/getDiaryMetadata";
-import getMarkdownContent from "../../../../components/metadataFunctions/getMarkdownContent";
+import getDiaryMetadata from "../../../components/metadataFunctions/getDiaryMetadata";
+import getMarkdownContent from "../../../components/metadataFunctions/getMarkdownContent";
 import { Box, Container, Typography } from "@mui/material";
 import Markdown from "markdown-to-jsx";
 import React from "react";

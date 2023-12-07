@@ -3,6 +3,7 @@
 import { Box, Button, Container, Typography, useTheme } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const HomeHero = () => {
   const theme = useTheme();

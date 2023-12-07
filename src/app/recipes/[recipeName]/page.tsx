@@ -1,6 +1,6 @@
-import RecipeHero from "../../../../components/recipes/recipeHero";
-import getMarkdownContent from "../../../../components/metadataFunctions/getMarkdownContent";
-import getRecipeMetadata from "../../../../components/metadataFunctions/getRecipeMetadata";
+import RecipeHero from "../../../components/recipes/recipeHero";
+import getMarkdownContent from "../../../components/metadataFunctions/getMarkdownContent";
+import getRecipeMetadata from "../../../components/metadataFunctions/getRecipeMetadata";
 import { Box, Container, Typography, useTheme } from "@mui/material";
 import Markdown from "markdown-to-jsx";
 import React from "react";
