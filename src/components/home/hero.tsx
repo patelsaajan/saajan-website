@@ -71,29 +71,29 @@ const HomeHero = () => {
                 combinations.
               </Typography>
             </Box>
-          </motion.div>
 
-          <Button
-            href="https://1drv.ms/b/s!AtfvxxhKVXNCoja_Kq5SYF-rB3td?e=lJCPzl"
-            sx={{
-              backgroundColor: "primary.main",
-              color: "#FFFF",
-              width: "120px",
-              height: "50",
-              mt: "50px",
-              fontWeight: "525",
-              borderRadius: "20px",
-              transition: "all 200ms ease-out",
-              "&:hover": {
+            <Button
+              href="https://1drv.ms/b/s!AtfvxxhKVXNCoja_Kq5SYF-rB3td?e=lJCPzl"
+              sx={{
                 backgroundColor: "primary.main",
-                transform: "scale(1.1)",
-                borderRadius: "15px",
-                fontWeight: "600",
-              },
-            }}
-          >
-            View CV
-          </Button>
+                color: "#FFFF",
+                width: "120px",
+                height: "50",
+                mt: "50px",
+                fontWeight: "525",
+                borderRadius: "20px",
+                transition: "all 200ms ease-out",
+                "&:hover": {
+                  backgroundColor: "primary.main",
+                  transform: "scale(1.1)",
+                  borderRadius: "15px",
+                  fontWeight: "600",
+                },
+              }}
+            >
+              View CV
+            </Button>
+          </motion.div>
         </Box>
 
         <motion.div
