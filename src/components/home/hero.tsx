@@ -11,7 +11,7 @@ const aboutMe = [
   "  Away from the tech world, I'm a passionate cook who thrives on experimenting with recipes and discovering delightful flavour combinations.",
 ];
 
-const divVariantInitial = {
+const divContainer = {
   hidden: {
     opacity: 0,
     y: "100vh",
@@ -20,9 +20,26 @@ const divVariantInitial = {
     opacity: 1,
     y: 0,
     transition: {
-      stiffness: 40,
+      mass: 5.5,
+      damping: 30,
       type: "spring",
-      duration: 10,
+    },
+  },
+};
+
+const divChild = {
+  hidden: {
+    opacity: 0,
+    y: "100vh",
+  },
+
+  visable: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      duration: 2.5,
+      delay: 0.5,
     },
   },
 };
@@ -31,11 +48,7 @@ const HomeHero = () => {
   const theme = useTheme();
   return (
     <Container maxWidth="lg">
-      <motion.div
-        variants={divVariantInitial}
-        initial="hidden"
-        animate="visable"
-      >
+      <motion.div variants={divContainer} initial="hidden" animate="visable">
         <Box
           sx={{
             display: "flex",
@@ -69,44 +82,42 @@ const HomeHero = () => {
           </div>
         </Box>
         <Box sx={{ marginTop: "30px" }}>
-          <motion.div
-            initial={{ y: "100vh" }}
-            animate={{ y: 0 }}
-            transition={{
-              type: "tween",
-              duration: 2.5,
-              delay: 0.5,
-            }}
-          >
-            <Box sx={{ display: "flex column", textAlign: "justify" }}>
+          <motion.div variants={divChild}>
+            <Box
+              sx={{
+                display: "flex column",
+                textAlign: "justify",
+              }}
+            >
               {aboutMe.map((section) => (
                 <Typography variant="body1" py={"5px"}>
                   {section}
                 </Typography>
-              ))}
+              ))}{" "}
             </Box>
-
-            <Button
-              href="https://1drv.ms/b/s!AtfvxxhKVXNCoja_Kq5SYF-rB3td?e=lJCPzl"
-              sx={{
-                backgroundColor: "primary.main",
-                color: "#FFFF",
-                width: "120px",
-                height: "50",
-                mt: "50px",
-                fontWeight: "525",
-                borderRadius: "20px",
-                transition: "all 200ms ease-out",
-                "&:hover": {
+            <Box sx={{ display: "flex column", textAlign: "center" }}>
+              <Button
+                href="https://1drv.ms/b/s!AtfvxxhKVXNCoja_Kq5SYF-rB3td?e=lJCPzl"
+                sx={{
                   backgroundColor: "primary.main",
-                  transform: "scale(1.1)",
-                  borderRadius: "15px",
-                  fontWeight: "600",
-                },
-              }}
-            >
-              View CV
-            </Button>
+                  color: "#FFFF",
+                  width: "120px",
+                  height: "50",
+                  mt: "30px",
+                  fontWeight: "525",
+                  borderRadius: "20px",
+                  transition: "all 200ms ease-out",
+                  "&:hover": {
+                    backgroundColor: "primary.main",
+                    transform: "scale(1.1)",
+                    borderRadius: "15px",
+                    fontWeight: "600",
+                  },
+                }}
+              >
+                View CV
+              </Button>
+            </Box>
           </motion.div>
         </Box>
       </motion.div>
