@@ -5,8 +5,23 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
+const divVariantInitial = {
+  hidden: {
+    opacity: 0,
+    y: "100vh",
+  },
+  visable: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      stiffness: 40,
+      type: "spring",
+      duration: 10,
+    },
+  },
+};
+
 const HomeHero = () => {
-  const firstDuration = 10;
   const theme = useTheme();
   return (
     <Container maxWidth="lg">
@@ -25,13 +40,9 @@ const HomeHero = () => {
       >
         <Box>
           <motion.div
-            initial={{ y: "100vh" }}
-            animate={{ y: 0 }}
-            transition={{
-              stiffness: 40,
-              type: "spring",
-              duration: firstDuration,
-            }}
+            variants={divVariantInitial}
+            initial="hidden"
+            animate="visable"
           >
             <Typography variant="h3" mt="10px">
               Hi, I am Saajan,
@@ -97,13 +108,9 @@ const HomeHero = () => {
         </Box>
 
         <motion.div
-          initial={{ y: "100vh" }}
-          animate={{ y: 0 }}
-          transition={{
-            stiffness: 50,
-            type: "spring",
-            duration: firstDuration,
-          }}
+          variants={divVariantInitial}
+          initial="hidden"
+          animate="visable"
         >
           <Image
             alt={"photo of myself"}
