@@ -5,6 +5,12 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 
+const aboutMe = [
+  " I'm originally from Cardiff and studied Electro-Mechanical Engineering at the University of Bristol. I take pride in holding a first-class master's degree in this field, with my guiding principles in life focusing on making the world a better place and assisting as many people as I can along the way.",
+  "Currently, I'm on a learning journey, delving into TypeScript and React, all the while sharpening my Python skills. When I'm not deeply engrossed in coding, you can find me passionately supporting Liverpool. I've discovered a unique way to blend my enthusiasm for football with my keen interest in data by venturing into the realms of data engineering and visualization.",
+  "  Away from the tech world, I'm a passionate cook who thrives on experimenting with recipes and discovering delightful flavour combinations.",
+];
+
 const divVariantInitial = {
   hidden: {
     opacity: 0,
@@ -25,32 +31,44 @@ const HomeHero = () => {
   const theme = useTheme();
   return (
     <Container maxWidth="lg">
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap-reverse",
-          justifyContent: "space-around",
-          alignItems: "center",
-          // border: "1px solid",
-          textAlign: { xs: "center", lg: "left" },
-          mt: "30px",
-          gap: { xs: "30px", lg: "0px" },
-        }}
+      <motion.div
+        variants={divVariantInitial}
+        initial="hidden"
+        animate="visable"
       >
-        <Box>
-          <motion.div
-            variants={divVariantInitial}
-            initial="hidden"
-            animate="visable"
-          >
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            justifyContent: "space-around",
+            alignItems: "center",
+            // border: "1px solid",
+            textAlign: { xs: "center", lg: "left" },
+            mt: "30px",
+            gap: { xs: "30px", lg: "0px" },
+          }}
+        >
+          <Image
+            alt={"photo of myself"}
+            width={400}
+            height={400}
+            src={"/imgs/heroPhoto.jpeg"}
+            style={{
+              borderRadius: "50%",
+              border: `5px solid ${theme.palette.primary.main}`,
+            }}
+          />
+          <div>
             <Typography variant="h3" mt="10px">
               Hi, I am Saajan,
             </Typography>
             <Typography variant="h4">
               Bristol Univeristy MEng Graduate
             </Typography>
-          </motion.div>
+          </div>
+        </Box>
+        <Box sx={{ marginTop: "30px" }}>
           <motion.div
             initial={{ y: "100vh" }}
             animate={{ y: 0 }}
@@ -60,27 +78,12 @@ const HomeHero = () => {
               delay: 0.5,
             }}
           >
-            <Box sx={{ display: "flex column" }}>
-              <Typography variant="body1" py={"5px"} textAlign={"justify"}>
-                I'm originally from Cardiff and studied Electro-Mechanical
-                Engineering at the University of Bristol. I take pride in
-                holding a first-class master's degree in this field, with my
-                guiding principles in life focusing on making the world a better
-                place and assisting as many people as I can along the way.
-              </Typography>
-              <Typography variant="body1" py={"5px"} textAlign={"justify"}>
-                Currently, I'm on a learning journey, delving into TypeScript
-                and React, all the while sharpening my Python skills. When I'm
-                not deeply engrossed in coding, you can find me passionately
-                supporting Liverpool. I've discovered a unique way to blend my
-                enthusiasm for football with my keen interest in data by
-                venturing into the realms of data engineering and visualization.
-              </Typography>
-              <Typography variant="body1" py={"5px"} textAlign={"justify"}>
-                Away from the tech world, I'm a passionate cook who thrives on
-                experimenting with recipes and discovering delightful flavor
-                combinations.
-              </Typography>
+            <Box sx={{ display: "flex column", textAlign: "justify" }}>
+              {aboutMe.map((section) => (
+                <Typography variant="body1" py={"5px"}>
+                  {section}
+                </Typography>
+              ))}
             </Box>
 
             <Button
@@ -106,24 +109,7 @@ const HomeHero = () => {
             </Button>
           </motion.div>
         </Box>
-
-        <motion.div
-          variants={divVariantInitial}
-          initial="hidden"
-          animate="visable"
-        >
-          <Image
-            alt={"photo of myself"}
-            width={400}
-            height={400}
-            src={"/imgs/heroPhoto.jpeg"}
-            style={{
-              borderRadius: "50%",
-              border: `5px solid ${theme.palette.primary.main}`,
-            }}
-          />
-        </motion.div>
-      </Box>
+      </motion.div>
     </Container>
   );
 };
